@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;700;900&display=swap');
+
+:root{
+    --blue-p: #062B5C;
+    --orange-p: #F28907;
+    --white-p: #FFFFFF;
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box!important;
+}
+body{
+    overflow-x: hidden!important;
+    padding: 0;
+    margin: 0;
+}
+/* Navbar */
+
+.nav-color{
+    background-color: var(--orange-p);
+}
+
+.navbar-itens-color a{
+    color: var(--white-p) !important;
+}
+
+.nav-link:hover{
+    cursor: pointer;
+    background-color: rgb(190, 190, 190);
+    border-radius: 5%;  
+}
+/* Banner */
+
+header{
+    background-color: var(--blue-p);
+}
+
+.conteudo{
+    background-color: var(--blue-p);
+}
+
+.texto{
+    margin-top: 5%;
+    color: var(--white-p);
+    font-size: 14px;
+    margin-left: 4%;
+}
+
+.texto h1{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 900;
+}
+.texto p{
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.login{
+    width: 200px;
+    height: 50px;
+    background-color: var(--orange-p);
+    color: var(--white-p);
+    border: none;
+    border-radius: 35px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;font-family: 'Lato', sans-serif;
+
+}
+
+.login:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    cursor: pointer;
+}
+.logo {
+    width: 25rem;
+    align-items: center;
+}
+.barra-login{
+    width: 100%!important;
+}
+.barra-login input, .alterar, .gravar{
+    border-top-left-radius: 35px!important;
+    border-bottom-left-radius: 35px!important;
+    border-top-right-radius: 35px!important;
+    border-bottom-right-radius: 35px!important;
+}
+
+.alterar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gravar {
+	background-color: var(--orange-p);
+	margin: 8px;
+}
+
+.barra-busca{
+    width: 75%!important;
+    height: 20%!important;
+    margin-top: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.barra-busca input{
+    border-top-left-radius: 35px!important;
+    border-bottom-left-radius: 35px!important;
+}
+
+.barra-busca button{
+    border-top-right-radius: 35px!important;
+    border-bottom-right-radius: 35px!important;
+    background-color: var(--orange-p);
+    color: var(--white-p);
+    font-weight: 300;
+}
+
+.custom-shape-divider-top-1653697456 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -1%!important;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1653697456 svg {
+    position: relative;
+    display: block;
+    width: calc(137% + 1.3px);
+    height: 133px;
+}
+
+.custom-shape-divider-top-1653697456 .shape-fill {
+    fill: var(--blue-p);
+}
+
+/* Serviços */
+
+.imgHospedagem{
+  /* border: 1px solid red; */
+  width: 224px;
+  height: 240px;
+  background-image: url(../img/servicos.png);
+  background-position: 4px 15px;
+  background-repeat: no-repeat;
+}
+
+.imgAluguel{
+  /* border: 1px solid red; */
+  width: 224px;
+  height: 240px;
+  background-image: url(../img/servicos.png);
+  background-position: -448px 15px;
+  background-repeat: no-repeat;
+}
+
+.imgRefeicoes{
+  /* border: 1px solid red; */
+  width: 224px;
+  height: 240px;
+  background-image: url(../img/servicos.png);
+  background-position: -880px 15px;
+  background-repeat: no-repeat;
+}
+
+/* Hotéis */
+
+.hospedagens{
+    background-color: var(--orange-p);
+    margin-top: 3rem;
+    padding-top: 3rem;
+}
+
+.borda-titulo{
+    width: 350px;
+    height: 42px;
+    margin-bottom: 2rem;
+    padding-top: 0.5rem;
+    padding-left: 2rem;
+    background-color: var(--blue-p);
+    border-radius: 35px;
+}
+
+.borda-titulo h2{
+    font-size: 1.5rem;
+    color: var(--white-p);
+}
+
+.card{
+    background-color: transparent!important;
+    border-radius: 35px!important;
+}
+
+.card img{
+    border-radius: 35px;
+
+}
+
+/* Contato */
+
+.contato{
+    color:  #F28907; 
+    font-weight: 800; 
+    font-size: 35px;
+}
+
+.formulario-contato h2{
+    font-size: 2rem;
+    font-weight: 900;
+    
+    color: var(--orange-p);
+}
+
+.formulario-contato input, textarea{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 35px;
+    background-color: #D9D9D9;
+}
+
+.email{
+    height: 55px;
+    padding: 1.5rem;
+}
+
+.mensagem{
+    height: 180px;
+    padding: 1.5rem;
+    resize: none;
+}
+
+.titulos {
+    color: #2973D3;
+}
+
+.fa-paper-plane {
+    margin: 0.5rem;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.meu__link {
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.botao-enviar{
+    width: 150px;
+    height: 50px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: var(--orange-p);
+    color: var(--white-p);
+    border: none;
+    border-radius: 35px;
+    align-items: center;
+}
+.final-rodape{
+    position: fixed;
+    height: 2rem;
+    width: 100%;
+    bottom: 0;
+    background-color: var(--blue-p);
+}
