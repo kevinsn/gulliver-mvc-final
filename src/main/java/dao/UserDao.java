@@ -56,7 +56,7 @@ public class UserDao implements DaoBase<User> {
 			stm.setString(1, email);
 			stm.setString(2, senha);
 			
-			// ResultSet é o retorno da query
+			// ResultSet Ã© o retorno da query
 			
 			ResultSet rs = stm.executeQuery();
 			
