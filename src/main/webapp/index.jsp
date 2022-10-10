@@ -5,6 +5,11 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--icon-->
+	<link rel="icon" type="imagem/png" href="/imgs/flight.png ">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	 
+  	<!--Script para icon-->
+  	<script src="https://use.fontawesome.com/62e43a72a9.js"></script>   
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -14,6 +19,13 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
 	integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
 	</script>
+	<!--API-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""></script>
     <link rel="stylesheet" href="./assets/css/styles.css">
 
     <title>Gulliver Traveller</title>
@@ -35,15 +47,25 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Hospedagem</a>
                         </li>
-             	<li class="nav-item">
-               	<a class="nav-link" href="#">Aluguel de Carros</a>
-             	</li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Gastronomia</a>
-                        </li>
-                        <li class="nav-item">
-          				<a class="nav-link" href="#">Contato</a>
-          				</li>
+		             	<li class="nav-item">
+		               		<a class="nav-link" href="#">Alugar Carros</a>
+		             	</li>
+		                <li class="nav-item">
+		                    <a class="nav-link" href="#">Gastronomia</a>
+		                </li>
+		                <li class="nav-item dropdown">
+			                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+			                  aria-expanded="false">
+			                  Mais
+			                </a>
+			                <ul class="dropdown-menu">
+			                  <li><a class="dropdown-item" href="#">Como Chegar</a></li>
+			                  <li><a class="dropdown-item" href="#">Vida Noturna</a></li>
+			                  <li><a class="dropdown-item" href="#">Cultura</a></li>
+			                  <li><a class="dropdown-item" href="#">Entretenimento</a></li>
+			                  <li><a class="dropdown-item" href="#">Dicas Úteis</a></li>
+			                </ul>
+			            </li>
                     </ul>
                 </div>
             </div>
