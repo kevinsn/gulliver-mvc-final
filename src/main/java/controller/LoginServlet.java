@@ -3,6 +3,7 @@ package controller;
 import java.time.LocalDate;
 
 import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -21,7 +22,7 @@ public class LoginServlet extends HttpServlet {
 	 */
 	private static final long serialVersionUID = -173319121081412032L;
 
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException {
 		
 		try {
 			
@@ -43,7 +44,8 @@ public class LoginServlet extends HttpServlet {
 			dispatcher.forward(request, response);
 			
 		} catch (Exception e) {
-			System.out.println("Erro chamando login servlet: " + e.getMessage());
+	        throw new ServletException("Login failed", e);
+//			System.out.println("Erro chamando login servlet: " + e.getMessage());
 		}
 	}
 	
