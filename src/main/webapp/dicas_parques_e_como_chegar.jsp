@@ -59,11 +59,13 @@
 			                  Mais
 			                </a>
 			                <ul class="dropdown-menu">
-			                  <li><a class="dropdown-item" href="#">Como Chegar</a></li>
-			                  <li><a class="dropdown-item" href="#">Vida Noturna</a></li>
-			                  <li><a class="dropdown-item" href="#">Cultura</a></li>
-			                  <li><a class="dropdown-item" href="#">Entretenimento</a></li>
-			                  <li><a class="dropdown-item" href="#">Dicas Úteis</a></li>
+			                  <li><a class="dropdown-item" href="dicas_parques_e_como_chegar">Dicas Úteis</a></li>
+			                  <li><a class="dropdown-item" href="dicas_parques_e_como_chegar">Parques</a></li>
+			                  <li><a class="dropdown-item" href="dicas_parques_e_como_chegar">Como Chegar</a></li>
+			                  <li><a class="dropdown-item" href="cultura_historia_entretenimento_vida.jsp">Cultura</a></li>
+			                  <li><a class="dropdown-item" href="cultura_historia_entretenimento_vida.jsp">História</a></li>
+			                  <li><a class="dropdown-item" href="cultura_historia_entretenimento_vida.jsp">Entretenimento</a></li>
+			                  <li><a class="dropdown-item" href="cultura_historia_entretenimento_vida.jsp">Vida Noturna</a></li>
 			                </ul>
 			            </li>
                     </ul>
@@ -104,7 +106,7 @@
   <!--Como chegar-->
     <section class="chegar">
       <section class="chegar-card container">
-        <h1 class="title-chegar"> COMO CHEGAR A SÃO PAULO </h1>
+        <h1 class="title-chegar">COMO CHEGAR A SÃO PAULO </h1>
         <section class="pt-4">
           <img class="sp-img" src="/imgs/image 37.svg">
           <div class="container px-lg-5">
@@ -146,7 +148,7 @@
     <section class="dicas">
       <div class="container col-12 col-lg-8">
         <div class="row gx-2 justify-content-center">
-          <h1 class="dicas-uteis"> DICAS ÚTEIS </h1>
+          <h1 class="dicas-uteis">DICAS ÚTEIS </h1>
           <a class="cardi">
             <div class="inneri">
               <h2 class="title">Transporte em São Paulo</h2>
