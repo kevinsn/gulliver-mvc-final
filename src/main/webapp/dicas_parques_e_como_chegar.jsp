@@ -59,11 +59,11 @@
 			                  Mais
 			                </a>
 			                <ul class="dropdown-menu">
-			                  <li><a class="dropdown-item" href="dicas_parques_e_como_chegar.jsp">Dicas ⁄teis</a></li>
+			                  <li><a class="dropdown-item" href="dicas_parques_e_como_chegar.jsp">Dicas √öteis</a></li>
 			                  <li><a class="dropdown-item" href="dicas_parques_e_como_chegar.jsp">Parques</a></li>
 			                  <li><a class="dropdown-item" href="dicas_parques_e_como_chegar.jsp">Como Chegar</a></li>
 			                  <li><a class="dropdown-item" href="cultura_historia_entretenimento_vida.jsp">Cultura</a></li>
-			                  <li><a class="dropdown-item" href="cultura_historia_entretenimento_vida.jsp">HistÛria</a></li>
+			                  <li><a class="dropdown-item" href="cultura_historia_entretenimento_vida.jsp">Hist√≥ria</a></li>
 			                  <li><a class="dropdown-item" href="cultura_historia_entretenimento_vida.jsp">Entretenimento</a></li>
 			                  <li><a class="dropdown-item" href="cultura_historia_entretenimento_vida.jsp">Vida Noturna</a></li>
 			                </ul>
@@ -84,7 +84,7 @@
             <h1>Bem-Vindo(a)!</h1>
             <p> Gulliver Traveller conta todas as suas aventuras e desbravamentos pelos confins do mundo trazendo,
               para seus leitores, dicas de viagens e de lugares pouco explorados pelos turistas menos experientes. Em
-              seu blog, os viajantes encontram indicaÁıes de hoteis para alugarem, alugar carro e gastronomia.</p>
+              seu blog, os viajantes encontram indica√ß√µes de hoteis para alugarem, alugar carro e gastronomia.</p>
 
              <form method="post" action="login.jsp" >
             	<button type="submit"  class="login">Login</button>
@@ -103,10 +103,11 @@
       </div>    
     </main>
   </header>
+  
   <!--Como chegar-->
     <section class="chegar">
       <section class="chegar-card container">
-        <h1 class="title-chegar">COMO CHEGAR A S√O PAULO </h1>
+        <h1 class="title-chegar">COMO CHEGAR A S√ÉO PAULO </h1>
         <section class="pt-4">
           <img class="sp-img" src="/imgs/image 37.svg">
           <div class="container px-lg-5">
@@ -119,19 +120,19 @@
                       <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"></div>
 
 
-                      <p class="mb-1">Quem deseja visitar a capital paulista n„o encontrar· dificuldade para chegar atÈ
-                        l·. A cidade oferece dois aeroportos
-                        principais: Aeroporto de Congonhas e Aeroporto Internacional de S„o Paulo, em Guarulhos.</p>
+                      <p class="mb-1">Quem deseja visitar a capital paulista n√£o encontrar√° dificuldade para chegar at√©
+                        l√°. A cidade oferece dois aeroportos
+                        principais: Aeroporto de Congonhas e Aeroporto Internacional de S√£o Paulo, em Guarulhos.</p>
 
-                      <p class="mb-1">Para quem chega de carro, os principais acessos para a capital paulista s„o:
+                      <p class="mb-1">Para quem chega de carro, os principais acessos para a capital paulista s√£o:
                         Anchieta (SP-150) e Imigrantes (SP-160),
-                        que fazem ligaÁ„o com o Porto de Santos; Bandeirantes (SP-348), que liga a cidade a Campinas;
+                        que fazem liga√ß√£o com o Porto de Santos; Bandeirantes (SP-348), que liga a cidade a Campinas;
                         Castelo Branco (SP-280),
-                        para o interior de S„o Paulo; Anhanguera (SP-330), para quem vem de Uberl‚ndia e Distrito
-                        Federal; Fern„o Dias (BR-381),
-                        que faz ligaÁ„o com o sul de Minas; Ayrton Senna (SP-070) e Presidente Dutra (BR-116), para
-                        percursos atÈ o Rio de
-                        Janeiro; e a RÈgis Bittencourt (BR-116) para conexıes com cidades do Sul.</p>
+                        para o interior de S√£o Paulo; Anhanguera (SP-330), para quem vem de Uberl√¢ndia e Distrito
+                        Federal; Fern√£o Dias (BR-381),
+                        que faz liga√ß√£o com o sul de Minas; Ayrton Senna (SP-070) e Presidente Dutra (BR-116), para
+                        percursos at√© o Rio de
+                        Janeiro; e a R√©gis Bittencourt (BR-116) para conex√µes com cidades do Sul.</p>
 
                     </div>
                   </div>
@@ -143,46 +144,122 @@
 
       </section>
     </section>
-
-
+    
+    
     <section class="dicas">
       <div class="container col-12 col-lg-8">
         <div class="row gx-2 justify-content-center">
-          <h1 class="dicas-uteis">DICAS ⁄TEIS </h1>
+          <h1 class="dicas-uteis">DICAS √öTEIS </h1>
           <a class="cardi">
             <div class="inneri">
-              <h2 class="title">Transporte em S„o Paulo</h2>
-              <time class="subtitle"> No geral, S„o Paulo oferece um bom sistema de transporte p˙blico. O metrÙ È o meio
-                mais pr·tico para turistas, j· que
-                leva ‡s principais regiıes da cidade e tem paradas prÛximas a pontos turÌsticos.<time>
+              <h2 class="title">Transporte em S√£o Paulo</h2>
+              <time class="subtitle"> No geral, S√£o Paulo oferece um bom sistema de transporte p√∫blico. O metr√¥ √© o meio
+                mais pr√°tico para turistas, j√° que
+                leva √†s principais regi√µes da cidade e tem paradas pr√≥ximas a pontos tur√≠sticos.<time>
             </div>
           </a>
 
           <a class="cardi card2">
             <div class="inneri">
-              <h2 class="title">Quando ir a S„o Paulo</h2>
-              <time class="subtitle">Conhecida como Terra de Garoa, S„o Paulo costuma ter o clima de v·rias estaÁıes em
-                um ˙nico dia. … comum sentir frio de
-                manh„, passar calor na hora do almoÁo, curtir uma tarde amena e pegar uma chuvinha no final da tarde.
+              <h2 class="title">Quando ir a S√£o Paulo</h2>
+              <time class="subtitle">Conhecida como Terra de Garoa, S√£o Paulo costuma ter o clima de v√°rias esta√ß√µes em
+                um √∫nico dia. √â comum sentir frio de
+                manh√£, passar calor na hora do almo√ßo, curtir uma tarde amena e pegar uma chuvinha no final da tarde.
 
-                A melhor Època para viajar a S„o Paulo sempre vai depender das preferÍncias de cada viajante.<time>
+                A melhor √©poca para viajar a S√£o Paulo sempre vai depender das prefer√™ncias de cada viajante.<time>
             </div>
           </a>
 
           <a class="cardi card3">
             <div class="inneri">
-              <h2 class="title">PONTOS TURÕSTICOS EM S√O PAULO</h2>
-              <time class="subtitle"> Para seu final de semana que tal um passeio pelo Centro de S„o Paulo?
-                TambÈm h· o Viaduto do ch·, a Igreja da SÈ, os prÈdios do TerraÁo It·lia e o da Bovespa.
-                Uma dica È ficar atento e ir somente durante o dia. De preferÍncia no s·bado que ainda tem bastante
-                gente andando pelas ruas. Afinal, estes conselhos n„o podem faltar nas dicas de S„o Paulo para turistas,
-                n„o?<time>
+              <h2 class="title">PONTOS TUR√çSTICOS EM S√ÉO PAULO</h2>
+              <time class="subtitle"> Para seu final de semana que tal um passeio pelo Centro de S√£o Paulo?
+                Tamb√©m h√° o Viaduto do ch√°, a Igreja da S√©, os pr√©dios do Terra√ßo It√°lia e o da Bovespa.
+                Uma dica √© ficar atento e ir somente durante o dia. De prefer√™ncia no s√°bado que ainda tem bastante
+                gente andando pelas ruas. Afinal, estes conselhos n√£o podem faltar nas dicas de S√£o Paulo para turistas,
+                n√£o?<time>
             </div>
           </a>
 
         </div>
       </div>
     </section>
+    
+    <!--Parques-->
+    <section class="parques">
+      <section class="parques container">
+        <h1 class="title-parques">PARQUES </h1>
+        <section class="pt-4">
+          <img class="sp-img" src="/imgs/image 37.svg">
+          <div class="container px-lg-5">
+            
+            <!-- Page-->
+            <div class="card-group col-12">
+
+              <div class="row gx-lg-5">
+                <div class="col-lg-6 col-xxl-4 mb-5">
+                  <div class="card bg-light border-0 h-100">
+                    <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                      <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"></div>
+                      <h2 class="fs-4 fw-bold">Parque Ibirapuera</h2>
+                      <p class="mb-0">Com uma √°rea verde de 1.584.000m¬≤, √© um dos maiores circuitos culturais do mundo, 
+                      com museus e audit√≥rios de Oscar Niemeyer, patrim√¥nios tombados pelo Instituto Patrim√¥nio 
+                      Hist√≥rico e Art√≠stico Nacional. </p>
+
+                      <a href="https://www.ibirapueraparque.com.br"
+                        target="_blank"> <button class="button-gastro"> <i class="fas fa-utensils"></i>Saiba
+                          mais</button>
+                      </a>
+
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-xxl-4 mb-5">
+                  <div class="card bg-light border-0 h-100">
+                    <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                      <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i
+                          class="bi bi-cloud-download"></i></div>
+                      <h2 class="fs-4 fw-bold">Parque do Carmo</h2>
+                      <p class="mb-0">No Parque, o pr√©dio-sede tem arquitetura colonial, h√° um conjunto de lagos e 
+                      toda uma √°rea ajardinada. Possui vegeta√ß√£o composta por eucaliptais, 
+                      remanescentes de Mata Atl√¢ntica, brejos, al√©m de gramados, cafezal, pomar, 
+                      bosque de cerejeiras-de-Okinawa e um viveiro de produ√ß√£o de esp√©cies arbustivas.</p>
+                      <a href="https://www.parquedocarmo.net" target="_blank"> <button class="button-gastro"> <i
+                            class="fas fa-utensils"></i>Saiba mais</button>
+                      </a>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-xxl-4 mb-5">
+                  <div class="card bg-light border-0 h-100">
+                    <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                      <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i
+                          class="bi bi-bootstrap"></i></div>
+                      <h2 class="fs-4 fw-bold">Parque Vila-Lobos</h2>
+                      <p class="mb-0">Em 1989, o parque Villa-Lobos come√ßou a ser implantado pelo Departamento de √Åguas 
+                      e Energia El√©trica ‚Äì DAEE. Foram removidas as fam√≠lias que viviam no local, 
+                      retirados 500 mil m¬≥ de entulho com mais de 1 metro de di√¢metro, e movimentados 
+                      2 milh√µes de m¬≥ de entulho e terra para acerto das eleva√ß√µes existentes. 
+                      O c√≥rrego Boa√ßava, que passava pela √°rea, foi canalizado.</p>
+                      <a href="https://www.parquevillalobos.net"
+                        target="_blank"> <button class="button-gastro"> <i class="fas fa-utensils"></i>Saiba
+                          mais</button>
+                      </a>
+
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+        </section>
+
+      </section>
+    </section>
+
 
   <footer>
     <div class="container pt-5 pb-5">
