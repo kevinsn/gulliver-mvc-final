@@ -59,9 +59,9 @@
 			                  Mais
 			                </a>
 			                <ul class="dropdown-menu">
-			                  <li><a class="dropdown-item" href="dicas_parques_e_como_chegar">Dicas Úteis</a></li>
-			                  <li><a class="dropdown-item" href="dicas_parques_e_como_chegar">Parques</a></li>
-			                  <li><a class="dropdown-item" href="dicas_parques_e_como_chegar">Como Chegar</a></li>
+			                  <li><a class="dropdown-item" href="dicas_parques_e_como_chegar.jsp">Dicas Úteis</a></li>
+			                  <li><a class="dropdown-item" href="dicas_parques_e_como_chegar.jsp">Parques</a></li>
+			                  <li><a class="dropdown-item" href="dicas_parques_e_como_chegar.jsp">Como Chegar</a></li>
 			                  <li><a class="dropdown-item" href="cultura_historia_entretenimento_vida.jsp">Cultura</a></li>
 			                  <li><a class="dropdown-item" href="cultura_historia_entretenimento_vida.jsp">História</a></li>
 			                  <li><a class="dropdown-item" href="cultura_historia_entretenimento_vida.jsp">Entretenimento</a></li>
