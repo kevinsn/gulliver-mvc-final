@@ -214,19 +214,19 @@
 
           <h2 class="contato">Contate-nos</h2>
 
-          <h3> <i class="fa-solid fa-phone p-2"></i>(11) 9123456789</h3>
-          <h3> <i class="fa-brands fa-instagram-square p-2"></i>@GulliverTraveller</h3>
-          <h3><i class="fa-solid fa-envelope p-2"></i>gtraveller@gmail.com</h3>
+          <h3><i class="fa-solid fa-phone p-2"></i>(11) 9123456789</h3>
+          <h3><i class="fa-brands fa-instagram-square p-2"></i>@GulliverTraveller</h3>
+          <h3><i class="fa-solid fa-envelope p-2"></i>gullivertraveller@gmail.com</h3>
         </div>
         <div class="col-md-6 col-sm-12 col-12">
-          <img src="./assets/img/virtual-assistant.png" class="col-md-9 col-sm-12 col-8" alt="assistente virtual">
+          <img src="./assets/img/virtual-assistant.gif" class="col-md-9 col-sm-12 col-8" alt="assistente virtual">
         </div>
       </div>
       <div class="row">
         <div class="col-md-12 col-sm-6 col-xs-2">
-          <form action="POST" class="formulario-contato">
+          <form action="https://formsubmit.co/annee.02021@gmail.com" method="POST"  class="formulario-contato">
 
-            <input type="e-mail" placeholder="Seu e-mail" class="col-lg-8 col-md-6 col-sm-12 col-12 email">
+            <input type="email" placeholder="Seu e-mail" class="col-lg-8 col-md-6 col-sm-12 col-12 email">
 
             <textarea placeholder="Sua Mensagem" class="col-lg-8 col-md-6 col-sm-12 col-12 mensagem"></textarea>
             <div class="col-md-12 col-sm-12 col-12">
