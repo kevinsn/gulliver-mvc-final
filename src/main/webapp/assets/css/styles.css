@@ -903,7 +903,7 @@ iframe{
     border: 5px solid  #F28907;
     border-radius: 15px;
     margin-bottom: 20px;
-    background-image: url('./assets/img/transporte.jfif');
+    background-image: url('../img/transporte.jfif');
     background-size: cover;
 /*
     @include media {
@@ -953,11 +953,11 @@ iframe{
 }
 
 .card2 {
-    background-image: url('./assets/img/quando_ir_a_sp.jpg');
+    background-image: url('../img/quando_ir_a_sp.jpg');
 }
 
 .card3 {
-    background-image: url('./assets/img/pontos_turisticos.jpg')
+    background-image: url('../img/pontos_turisticos.jpg')
 }
 
 .dicas{

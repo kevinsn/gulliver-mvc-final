@@ -108,7 +108,7 @@
   <!--Como chegar-->
     <section class="chegar">
       <section class="chegar-card container">
-        <h1 class="title-chegar">COMO CHEGAR A SÃO PAULO </h1>
+        <h1 class="title-chegar">COMO CHEGAR A SÃO PAULO</h1>
         <section class="pt-4">
           <img class="sp-img" src="./assets/img/como-chegar.svg">
           <div class="container px-lg-5">
@@ -189,7 +189,7 @@
     <!--Parques-->
     <section class="parques">
       <section class="parques container">
-        <h1 class="title-parques">PARQUES </h1>
+        <h1 class="title-parques">PARQUES</h1>
         <section class="pt-4">
           <div class="container px-lg-5">
             
