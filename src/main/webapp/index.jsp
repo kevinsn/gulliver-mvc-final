@@ -243,10 +243,34 @@
       </div>
 
     </div>
-    </div>
   </footer>
+  
+	<script src="index.js"></script>
+	<!-- Script para incrementar plugin de libras no site-->
+	<div vw class="enabled">
+		<div vw-access-button class="active"></div>
+		<div vw-plugin-wrapper>
+			<div class="vw-plugin-top-wrapper"></div>
+		</div>
+	</div>
+	<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+	<script>
+		new window.VLibras.Widget('https://vlibras.gov.br/app');
+	</script>
 
-  </main>
+	<!--elemento de acessibilidade-->
+	<script>
+		(function(d) {
+			var s = d.createElement("script");
+			s.setAttribute("data-account", "1DS8M6g26o");
+			s.setAttribute("src", "https://cdn.userway.org/widget.js");
+			(d.body || d.head).appendChild(s);
+		})(document)
+	</script>
+	<noscript>
+		Please ensure Javascript is enabled for purposes of <a
+			href="https://userway.org">website accessibility</a>
+	</noscript>
 
 </body>
 
