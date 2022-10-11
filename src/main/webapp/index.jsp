@@ -1,4 +1,5 @@
 <!doctype html>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <html lang="pt-br">
 
 <head>
@@ -59,11 +60,11 @@
 			                  Mais
 			                </a>
 			                <ul class="dropdown-menu">
-			                  <li><a class="dropdown-item" href="dicas_parques_e_como_chegar.jsp">Dicas Úteis</a></li>
+			                  <li><a class="dropdown-item" href="dicas_parques_e_como_chegar.jsp">Dicas Ãšteis</a></li>
 			                  <li><a class="dropdown-item" href="dicas_parques_e_como_chegar.jsp">Parques</a></li>
 			                  <li><a class="dropdown-item" href="dicas_parques_e_como_chegar.jsp">Como Chegar</a></li>
 			                  <li><a class="dropdown-item" href="cultura_historia_entretenimento_vida.jsp">Cultura</a></li>
-			                  <li><a class="dropdown-item" href="cultura_historia_entretenimento_vida.jsp">História</a></li>
+			                  <li><a class="dropdown-item" href="cultura_historia_entretenimento_vida.jsp">HistÃ³ria</a></li>
 			                  <li><a class="dropdown-item" href="cultura_historia_entretenimento_vida.jsp">Entretenimento</a></li>
 			                  <li><a class="dropdown-item" href="cultura_historia_entretenimento_vida.jsp">Vida Noturna</a></li>
 			                </ul>
@@ -84,7 +85,7 @@
             <h1>Bem-Vindo(a)!</h1>
             <p> Gulliver Traveller conta todas as suas aventuras e desbravamentos pelos confins do mundo trazendo,
               para seus leitores, dicas de viagens e de lugares pouco explorados pelos turistas menos experientes. Em
-              seu blog, os viajantes encontram indicações de hoteis para alugarem, alugar carro e gastronomia.</p>
+              seu blog, os viajantes encontram indicaÃ§Ãµes de hoteis para alugarem, alugar carro e gastronomia.</p>
 
              <form method="post" action="login.jsp" >
             	<button type="submit"  class="login">Login</button>
@@ -118,7 +119,7 @@
   <div class="container text-center pt-5 pb-5">
     <div class="row">
       <h2 class="d-flex justify-content-center" style="color: #073673; font-weight:bolder; font-size: 28px;">
-        Serviços que oferecemos para vocês: </h2>
+        ServiÃ§os que oferecemos para vocÃªs: </h2>
     </div>
   </div>
 
@@ -149,7 +150,7 @@
   <div class="hospedagens">
     <div class="container">
       <div class="borda-titulo">
-        <h2>Hotéis próximos a você</h2>
+        <h2>HotÃ©is prÃ³ximos a vocÃª</h2>
       </div>
       <div class="row my-1">
         <div class="col-sm-12 col-md-6 col-lg-4 my-3">
@@ -157,7 +158,7 @@
             <img src="./assets/img/hotel-1.png" class="img-fluid card-img-top" alt="...">
           </div>
           <div class="card-body">
-            <h5 class="card-title">IBIS Styles São Paulo Anhembi</h5>
+            <h5 class="card-title">IBIS Styles SÃ£o Paulo Anhembi</h5>
             <div class="aval-stars">
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -175,7 +176,7 @@
             <img src="./assets/img/hotel-2.png" class="img-fluid card-img-top" alt="...">
           </div>
           <div class="card-body">
-            <h5 class="card-title">Renaissance São Paulo Hotel</h5>
+            <h5 class="card-title">Renaissance SÃ£o Paulo Hotel</h5>
             <div class="aval-stars">
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>

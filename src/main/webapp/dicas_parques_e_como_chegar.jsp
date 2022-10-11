@@ -1,4 +1,5 @@
 <!doctype html>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <html lang="pt-br">
 
 <head>
@@ -59,11 +60,11 @@
 			                  Mais
 			                </a>
 			                <ul class="dropdown-menu">
-			                  <li><a class="dropdown-item" href="dicas_parques_e_como_chegar.jsp">Dicas Úteis</a></li>
+			                  <li><a class="dropdown-item" href="dicas_parques_e_como_chegar.jsp">Dicas Ãteis</a></li>
 			                  <li><a class="dropdown-item" href="dicas_parques_e_como_chegar.jsp">Parques</a></li>
 			                  <li><a class="dropdown-item" href="dicas_parques_e_como_chegar.jsp">Como Chegar</a></li>
 			                  <li><a class="dropdown-item" href="cultura_historia_entretenimento_vida.jsp">Cultura</a></li>
-			                  <li><a class="dropdown-item" href="cultura_historia_entretenimento_vida.jsp">História</a></li>
+			                  <li><a class="dropdown-item" href="cultura_historia_entretenimento_vida.jsp">HistÃ³ria</a></li>
 			                  <li><a class="dropdown-item" href="cultura_historia_entretenimento_vida.jsp">Entretenimento</a></li>
 			                  <li><a class="dropdown-item" href="cultura_historia_entretenimento_vida.jsp">Vida Noturna</a></li>
 			                </ul>
@@ -84,7 +85,7 @@
             <h1>Bem-Vindo(a)!</h1>
             <p> Gulliver Traveller conta todas as suas aventuras e desbravamentos pelos confins do mundo trazendo,
               para seus leitores, dicas de viagens e de lugares pouco explorados pelos turistas menos experientes. Em
-              seu blog, os viajantes encontram indicações de hoteis para alugarem, alugar carro e gastronomia.</p>
+              seu blog, os viajantes encontram indicaÃ§Ãµes de hoteis para alugarem, alugar carro e gastronomia.</p>
 
              <form method="post" action="login.jsp" >
             	<button type="submit"  class="login">Login</button>
@@ -107,9 +108,9 @@
   <!--Como chegar-->
     <section class="chegar">
       <section class="chegar-card container">
-        <h1 class="title-chegar">COMO CHEGAR A SÃO PAULO </h1>
+        <h1 class="title-chegar">COMO CHEGAR A SÃO PAULO </h1>
         <section class="pt-4">
-          <img class="sp-img" src="/imgs/image 37.svg">
+          <img class="sp-img" src="./assets/img/como-chegar.svg">
           <div class="container px-lg-5">
             <!-- Page-->
             <div class="card-group col-12">
@@ -190,7 +191,6 @@
       <section class="parques container">
         <h1 class="title-parques">PARQUES </h1>
         <section class="pt-4">
-          <img class="sp-img" src="/imgs/image 37.svg">
           <div class="container px-lg-5">
             
             <!-- Page-->
@@ -203,8 +203,8 @@
                       <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"></div>
                       <h2 class="fs-4 fw-bold">Parque Ibirapuera</h2>
                       <p class="mb-0">Com uma área verde de 1.584.000m², é um dos maiores circuitos culturais do mundo, 
-                      com museus e auditórios de Oscar Niemeyer, patrimônios tombados pelo Instituto Patrimônio 
-                      Histórico e Artístico Nacional. </p>
+                      com museus e auditórios de Oscar Niemeyer, patrimônios tombados pelo Instituto Patrimônio Histórico 
+                      e Artístico Nacional. </p>
 
                       <a href="https://www.ibirapueraparque.com.br"
                         target="_blank"> <button class="button-gastro"> <i class="fas fa-utensils"></i>Saiba
@@ -221,8 +221,8 @@
                       <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i
                           class="bi bi-cloud-download"></i></div>
                       <h2 class="fs-4 fw-bold">Parque do Carmo</h2>
-                      <p class="mb-0">No Parque, o prédio-sede tem arquitetura colonial, há um conjunto de lagos e 
-                      toda uma área ajardinada. Possui vegetação composta por eucaliptais, 
+                      <p class="mb-0">No Parque, o prédio-sede tem arquitetura colonial, 
+                      há um conjunto de lagos e toda uma área ajardinada. Possui vegetação composta por eucaliptais, 
                       remanescentes de Mata Atlântica, brejos, além de gramados, cafezal, pomar, 
                       bosque de cerejeiras-de-Okinawa e um viveiro de produção de espécies arbustivas.</p>
                       <a href="https://www.parquedocarmo.net" target="_blank"> <button class="button-gastro"> <i
@@ -241,8 +241,8 @@
                       <h2 class="fs-4 fw-bold">Parque Vila-Lobos</h2>
                       <p class="mb-0">Em 1989, o parque Villa-Lobos começou a ser implantado pelo Departamento de Águas 
                       e Energia Elétrica – DAEE. Foram removidas as famílias que viviam no local, 
-                      retirados 500 mil m³ de entulho com mais de 1 metro de diâmetro, e movimentados 
-                      2 milhões de m³ de entulho e terra para acerto das elevações existentes. 
+                      retirados 500 mil m³ de entulho com mais de 1 metro de diâmetro, e 
+                      movimentados 2 milhões de m³ de entulho e terra para acerto das elevações existentes. 
                       O córrego Boaçava, que passava pela área, foi canalizado.</p>
                       <a href="https://www.parquevillalobos.net"
                         target="_blank"> <button class="button-gastro"> <i class="fas fa-utensils"></i>Saiba
