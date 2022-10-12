@@ -50,36 +50,36 @@ public class LoginServlet extends HttpServlet {
 	}
 	
 	private User searchUser(String email, String password) {
-//		if(email.equals("gulliver@traveller.com") && password.equals("123")) {
-//			User result = new User();
-//			
-//			result.setName("Nome Sobrenome");
-//			result.setEmail("email@email.com");
-//			result.setPassword("123");
-//			result.setBirthDate(LocalDate.of(2000, 1, 1));
-//			result.setGender("1");
-//			result.setPhoto(".\\assets\\images\\user.png");
-//			result.setLasAccess(LocalDate.of(2022, 1, 1));
-//			
-//			Address address = new Address();
-//			address.setCity("S�o Paulo");
-//			address.setState("SP");
-//			address.setCountry("Brasil");
-//			
-//			result.setAddress(address);
-//			
-//			return result;
-//			
-//		} else {
-//			return null;
-//		}
+		if(email.equals("gulliver@traveller.com") && password.equals("123")) {
+			User result = new User();
+			
+			result.setName("Nome Sobrenome");
+			result.setEmail("email@email.com");
+			result.setPassword("123");
+			result.setBirthDate(LocalDate.of(2000, 1, 1));
+			result.setGender("1");
+			result.setPhoto(".\\assets\\images\\user.png");
+			result.setLasAccess(LocalDate.of(2022, 1, 1));
+			
+			Address address = new Address();
+			address.setCity("S�o Paulo");
+			address.setState("SP");
+			address.setCountry("Brasil");
+			
+			result.setAddress(address);
+			
+			return result;
+			
+		} else {
+			return null;
+		}
 		
-		DataSource dataSource = new DataSource();
-		UserDao userDao = new UserDao(dataSource);
+//		DataSource dataSource = new DataSource();
+//		UserDao userDao = new UserDao(dataSource);
+//		
+//		User retorno = userDao.getByEmailSenha(email, password);
 		
-		User retorno = userDao.getByEmailSenha(email, password);
-		
-		return retorno;
+//		return retorno;
 		
 	}
 	
