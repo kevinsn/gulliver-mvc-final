@@ -1,6 +1,5 @@
 <!doctype html>
 <jsp:useBean id="User" type="model.User" scope="session"/> 
-<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
 <html lang="pt-br">
 
     <head>
