@@ -78,7 +78,7 @@ public class LoginServlet extends HttpServlet {
 //		UserDao userDao = new UserDao(dataSource);
 //		
 //		User retorno = userDao.getByEmailSenha(email, password);
-		
+//		
 //		return retorno;
 		
 	}
