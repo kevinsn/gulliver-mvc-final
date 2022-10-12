@@ -1,7 +1,6 @@
 <!doctype html>
 <jsp:useBean id="ErrorMessage" type="java.lang.String" scope="request"></jsp:useBean>
 <%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <html lang="pt-br">
 		
 	<head>

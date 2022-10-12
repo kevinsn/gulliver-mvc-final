@@ -40,26 +40,16 @@
         <version>${tomcat.version}</version>
     </dependency>
 	<dependency>
-		<groupId>jstl</groupId>
-		<artifactId>jstl</artifactId>
-		<version>1.2</version>
-	</dependency>
-	<dependency>
 	    <groupId>javax.servlet</groupId>
-	    <artifactId>javax.servlet-api</artifactId>
-	    <version>3.1.0</version>
+	    <artifactId>servlet-api</artifactId>
+	    <version>2.5</version>
 	    <scope>provided</scope>
 	</dependency>
 	<dependency>
-		<groupId>javax</groupId>
-		<artifactId>javaee-web-api</artifactId>
-		<version>6.0</version>
-		<scope>provided</scope>
-	</dependency>
-	<dependency>
-	    <groupId>javax.servlet</groupId>
+	    <groupId>jstl</groupId>
 	    <artifactId>jstl</artifactId>
 	    <version>1.2</version>
+     	<scope>provided</scope>
 	</dependency>
     <dependency>
 	    <groupId>com.oracle.database.jdbc</groupId>
@@ -71,22 +61,24 @@
     <finalName>embeddedTomcatSample</finalName>
     <plugins>
         <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-dependency-plugin</artifactId>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>appassembler-maven-plugin</artifactId>
+            <version>2.0.0</version>
+            <configuration>
+                <assembleDirectory>target</assembleDirectory>
+                <programs>
+                    <program>
+                        <mainClass>launch.Main</mainClass>
+                        <name>webapp</name>
+                    </program>
+                </programs>
+            </configuration>
             <executions>
                 <execution>
                     <phase>package</phase>
-                    <goals><goal>copy</goal></goals>
-                    <configuration>
-                        <artifactItems>
-                            <artifactItem>
-                                <groupId>com.heroku</groupId>
-                                <artifactId>webapp-runner</artifactId>
-                                <version>9.0.52.1</version>
-                                <destFileName>webapp-runner.jar</destFileName>
-                            </artifactItem>
-                        </artifactItems>
-                    </configuration>
+                    <goals>
+                        <goal>assemble</goal>
+                    </goals>
                 </execution>
             </executions>
         </plugin>
