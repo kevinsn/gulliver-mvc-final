@@ -75,23 +75,30 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-12 col-md-6">
+                    <div class="col-12 col-sm-12 col-md-4">
                         <div class="form-group">
                             <label for="email" class="titulos alterar">Email</label>
                              <input type="email" class="form-control alterar" id="email" name="email" value="<c:out value="${User.email}"/>"
                                 disabled required>
                         </div>
                     </div>
+                    
+                	<div class="col-12 col-sm-12 col-md-2">
+                        <div class="form-group">
+                            <label for="cpf" class="titulos">CPF</label>
+                            <div class="input-group mb-2">
+                                <input type="text" class="form-control alterar" id="cpf" name="cpf" value="<c:out value="${User.cpf}"/>" disabled>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-12 col-sm-12 col-md-3">
-                        <div class="form-group disabled">
-                            <label for="senha" class="titulos">Senha</label>
-                            <div class="input-group mb-2">
-                                <input type="password" class="form-control alterar" id="senha" name="senha" value=""
-                                    placeholder="Sua nova senha" disabled>
-                            </div>
+                    <div class="col-12 col-sm-12 col-md-2">
+                        <div class="form-group">
+                            <label for="telefone" class="titulos">Celular</label>
+                            <input class="form-control alterar" id="telefone" name="telefone"
+                                value="<c:out value="${User.phone}"/>" disabled required>
                         </div>
                     </div>
                     <div class="col-12 col-sm-12 col-md-2">
@@ -101,17 +108,19 @@
                                 value="<c:out value="${User.birthDate}"/>" disabled required>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-12 col-md-1">
-                        <div class="form-group">
-                            <label for="genero" class="titulos">Gênero</label>
-                            <input class="form-control alterar" id="genero" name="genero"
-                                value="<c:out value="${User.gender}"/>" disabled required>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-6">
+                    <div class="col-12 col-sm-12 col-md-5">
                         <div class="form-group">
                             <label for="foto" class="titulos">Foto</label>
                             <input type="file" class="form-control alterar" id="foto" name="foto" disabled required>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-3">
+                        <div class="form-group disabled">
+                            <label for="senha" class="titulos">Senha</label>
+                            <div class="input-group mb-2">
+                                <input type="password" class="form-control alterar" id="senha" name="senha" value=""
+                                    placeholder="Sua nova senha" disabled>
+                            </div>
                         </div>
                     </div>
                 </div>

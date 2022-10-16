@@ -71,9 +71,13 @@ public class UserDao implements DaoBase<User> {
 				user.setName(rs.getString("NOME"));
 //				user.setGender(rs.getString("GENERO"));
 				user.setEmail(rs.getString("EMAIL"));
-				user.setPassword(rs.getString("SENHA"));
-				user.setPhoto(rs.getString("FOTO"));
+				user.setCpf(rs.getString("CPF"));
+				user.setPhone(rs.getString("CELULAR"));
 				user.setBirthDate(rs.getDate("DATA_NASCIMENTO").toLocalDate());
+				user.setPhoto(rs.getString("FOTO"));
+				user.setPassword(rs.getString("SENHA"));
+				user.setCreationDate(rs.getDate("DATA_CRIACAO").toLocalDate());
+				user.setLastAccess(rs.getDate("ULTIMO_ACESSO").toLocalDate());
 				
 //				Address address = new Address();
 //				address.setId(rs.getInt("ID"));
