@@ -43,13 +43,13 @@ public class UserDao implements DaoBase<User> {
 		// Conecto com o BD
 		// Executo o comando SQL
 		// Desconecto com o BD
+		User user = new User();
 		try {
 			
 			String sql = "SELECT * "
-						+ "FROM T_USUARIO tu "
-						+ "INNER JOIN T_CIDADE tc ON tu.ID_CIDADE = tc.ID "
-						+ "WHERE tu.EMAIL = ? "
-						+ "AND tu.SENHA = ? ";
+						+ "FROM RM94253.TB_USUARIO "
+						+ "WHERE EMAIL = ? "
+						+ "AND SENHA = ? ";
 			
 			PreparedStatement stm = dataSource.getConnection().prepareStatement(sql);
 			
@@ -60,30 +60,42 @@ public class UserDao implements DaoBase<User> {
 			
 			ResultSet rs = stm.executeQuery();
 			
-			if(rs.next()) {
+			System.out.println("111111111111111");
+			
+//			if(rs.next()) {
 				
-				User user = new User();
+				System.out.println("222222222222");
 				
-				user.setId(rs.getInt("ID"));
+//				User user = new User();
+				
+				user.setId(rs.getInt("ID_CLIENTE"));
 				user.setName(rs.getString("NOME"));
-				user.setGender(rs.getString("GENERO"));
+//				user.setGender(rs.getString("GENERO"));
 				user.setEmail(rs.getString("EMAIL"));
 				user.setPassword(rs.getString("SENHA"));
 				user.setPhoto(rs.getString("FOTO"));
-				user.setBirthDate(rs.getDate("DT_NASCIMENTO").toLocalDate());
+				user.setBirthDate(rs.getDate("DATA_NASCIMENTO").toLocalDate());
 				
-				Address address = new Address();
-				address.setId(rs.getInt("ID"));
-				address.setCity(rs.getString("CIDADE"));
-				address.setState(rs.getString("ESTADO"));
-				address.setCountry(rs.getString("PAIS"));
+//				Address address = new Address();
+//				address.setId(rs.getInt("ID"));
+//				address.setCity(rs.getString("CIDADE"));
+//				address.setState(rs.getString("ESTADO"));
+//				address.setCountry(rs.getString("PAIS"));
 				
-				user.setAddress(address);
+//				user.setAddress(address);
 				
-			} else {
-				return null;
-			}
-			
+				System.out.println(String.valueOf(user.getId()));
+				System.out.println(user.getName());
+				System.out.println(user.getEmail());
+				System.out.println(user.getPassword());
+				System.out.println(user.getPhoto());
+				System.out.println(user.getBirthDate());
+				
+//			} else {
+//				System.out.println("SETEI NULL");
+//				return null;
+//			}
+						
 //			String email = 'gulliver@traveller.com';
 //			String senha = '789456';
 			
@@ -91,8 +103,9 @@ public class UserDao implements DaoBase<User> {
 			e.printStackTrace();
 			System.out.println("UserDao.GETBYEMAILSENHA = " + e.getMessage());
 		}
+		return user;
 		
-		return null;
+//		return null;
 	}
 
 	public DataSource getDataSource() {
