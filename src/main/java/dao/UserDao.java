@@ -43,7 +43,6 @@ public class UserDao implements DaoBase<User> {
 		// Conecto com o BD
 		// Executo o comando SQL
 		// Desconecto com o BD
-		User user = new User();
 		try {
 			
 			String sql = "SELECT * "
@@ -62,11 +61,11 @@ public class UserDao implements DaoBase<User> {
 			
 			System.out.println("111111111111111");
 			
-//			if(rs.next()) {
+			if(rs.next()) {
 				
 				System.out.println("222222222222");
 				
-//				User user = new User();
+				User user = new User();
 				
 				user.setId(rs.getInt("ID_CLIENTE"));
 				user.setName(rs.getString("NOME"));
@@ -91,10 +90,12 @@ public class UserDao implements DaoBase<User> {
 				System.out.println(user.getPhoto());
 				System.out.println(user.getBirthDate());
 				
-//			} else {
-//				System.out.println("SETEI NULL");
-//				return null;
-//			}
+				return user;
+				
+			} else {
+				System.out.println("SETEI NULL");
+				return null;
+			}
 						
 //			String email = 'gulliver@traveller.com';
 //			String senha = '789456';
@@ -102,10 +103,9 @@ public class UserDao implements DaoBase<User> {
 		} catch (Exception e) {
 			e.printStackTrace();
 			System.out.println("UserDao.GETBYEMAILSENHA = " + e.getMessage());
+			return null;
 		}
-		return user;
 		
-//		return null;
 	}
 
 	public DataSource getDataSource() {
