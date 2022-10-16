@@ -52,15 +52,15 @@ public class HomeServlet extends HttpServlet {
 			result.setName("Nome sobrenome");
 			result.setBirthDate(LocalDate.of(2000, 1, 1));
 			result.setEmail("email@email.com");
-			result.setGender("1");
+//			result.setGender("1");
 			result.setPassword("123");
 			result.setPhoto(".\\assets\\images\\user.png");
-			result.setLasAccess(LocalDate.of(2022, 1, 1));
+//			result.setLasAccess(LocalDate.of(2022, 1, 1));
 			
 			Address address = new Address();
 			address.setCity("S�o Paulo");
 			address.setState("SP");
-			address.setCountry("Brasil");
+//			address.setCountry("Brasil");
 			
 			result.setAddress(address);
 			

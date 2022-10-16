@@ -118,7 +118,7 @@
                         <div class="form-group disabled">
                             <label for="senha" class="titulos">Senha</label>
                             <div class="input-group mb-2">
-                                <input type="password" class="form-control alterar" id="senha" name="senha" value=""
+                                <input type="password" class="form-control alterar" id="senha" name="senha" value="1234567890"
                                     placeholder="Sua nova senha" disabled>
                             </div>
                         </div>
@@ -126,11 +126,11 @@
                 </div>
 
                 <div class="row">
-					<div class="col-12 col-sm-12 col-md-5">
+                    <div class="col-12 col-sm-12 col-md-6">
                         <div class="form-group">
-                            <label for="cidade" class="titulos">Cidade</label>
-                            <input class="form-control alterar" id="cidade" name="cidade"
-                                value="<c:out value="${User.address.city}"/>" disabled required>
+                            <label for="cep" class="titulos">CEP</label>
+                            <input class="form-control alterar" id="cep" name="cep"
+                                value="<c:out value="${User.address.postalCode}"/>" disabled required>
                         </div>
                     </div>
                     <div class="col-12 col-sm-12 col-md-1">
@@ -140,11 +140,11 @@
                                 value="<c:out value="${User.address.state}"/>" disabled required>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-12 col-md-6">
+					<div class="col-12 col-sm-12 col-md-5">
                         <div class="form-group">
-                            <label for="pais" class="titulos">País</label>
-                            <input class="form-control alterar" id="pais" name="pais"
-                                value="<c:out value="${User.address.country}"/>" disabled required>
+                            <label for="cidade" class="titulos">Cidade</label>
+                            <input class="form-control alterar" id="cidade" name="cidade"
+                                value="<c:out value="${User.address.city}"/>" disabled required>
                         </div>
                     </div>
                 </div>

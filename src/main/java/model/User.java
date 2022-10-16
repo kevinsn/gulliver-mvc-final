@@ -15,6 +15,7 @@ public class User {
 	private LocalDate creationDate;
 	private LocalDate lastAccess;
 	private Address address;
+	
 	public int getId() {
 		return id;
 	}
