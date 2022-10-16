@@ -28,6 +28,7 @@
     integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
     crossorigin=""></script>
     <link rel="stylesheet" href="./assets/css/styles.css">
+     <script type = "text/javascript" src="./assets/js/api.js"></script>
 
     <title>Gulliver Traveller</title>
 </head>
@@ -49,7 +50,7 @@
                             <a class="nav-link active" aria-current="page" href="#">Hospedagem</a>
                         </li>
 		             	<li class="nav-item">
-		               		<a class="nav-link" href="#">Alugar Carros</a>
+		               		<a class="nav-link active" href="aluguel_veiculos.jsp">Alugar Carros</a>
 		             	</li>
 		                <li class="nav-item">
 		                    <a class="nav-link" href="#">Gastronomia</a>
@@ -147,69 +148,73 @@
     </div>
   </div>
 
-  <div class="hospedagens">
-    <div class="container">
-      <div class="borda-titulo">
-        <h2>Hotéis próximos a você</h2>
-      </div>
-      <div class="row my-1">
-        <div class="col-sm-12 col-md-6 col-lg-4 my-3">
-          <div class="card">
-            <img src="./assets/img/hotel-1.png" class="img-fluid card-img-top" alt="...">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">IBIS Styles São Paulo Anhembi</h5>
-            <div class="aval-stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
+   <section id="hospedagens" class="sec-2 hospedagens">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="borda-titulo">
+                            <h1 class="titulo-hospedagens">Hóteis próximos a você</h1>
+                          </div>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-12 row-cols-lg-12 row-cols-xl-3 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <img src="./img/renaissence.png" class="card-img-top" alt="...">
+                        </div>
+                        <div id="map"> </div>
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <h3 class="card-price"></h3>
 
-            <a href="#" class="box btn bg-warning mr-2"> Saiba mais </a>
-
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-4 my-3">
-          <div class="card">
-            <img src="./assets/img/hotel-2.png" class="img-fluid card-img-top" alt="...">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Renaissance São Paulo Hotel</h5>
-            <div class="aval-stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-
-
-            <a href="#" class=" box btn bg-warning mr-2"> Saiba mais </a>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-4 my-3">
-          <div class="card">
-            <img src="./assets/img/hotel-3.png" class="img-fluid card-img-top" alt="...">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Blue Tree Premium Morumbi</h5>
-            <div class="aval-stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <a href="#" class=" box btn bg-warning mr-2"> Saiba mais </a>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
+                            <div class="aval-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                              </div>
+                              <a id="btn-modal" class=" box btn bg-warning mr-2" onclick="getMore(0)"> Saiba mais </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./imagens/renaissence.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <h3 class="card-price"></h3>
+                            <div class="aval-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                              </div>
+                              <a id="btn-modal" class=" box btn bg-warning mr-2" onclick="getMore(1)"> Saiba mais </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card ">
+                            <img src="./imagens/blue-tree.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <h3 class="card-price"></h3>
+                            <div class="aval-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                              </div>
+                              <a id="btn-modal" class=" box btn bg-warning mr-2" onclick="getMore(2)"> Saiba mais </a>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </section>
+        
   <footer>
     <div class="container pt-5 pb-5">
       <div class="row">
