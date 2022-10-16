@@ -1,6 +1,5 @@
 package controller;
 
-import java.sql.SQLException;
 import java.time.LocalDate;
 
 import javax.servlet.RequestDispatcher;
@@ -15,8 +14,8 @@ import dao.UserDao;
 import model.Address;
 import model.User;
 
-@WebServlet("/login")
-public class LoginServlet extends HttpServlet {
+@WebServlet("/signup")
+public class SignupServlet extends HttpServlet {
 
 	/**
 	 * 
@@ -25,26 +24,31 @@ public class LoginServlet extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException {
 		
+		String paginaDestino = "";
+		
 		try {
-			
-			String email = request.getParameter("email");
-			String password = request.getParameter("password");
-			String page = "";
-			
-			User user = this.searchUser(email, password);
-			
-			if(user != null) {
-				System.out.println("NOT NULL");
-				request.getSession().setAttribute("User", user);
-				page = "/user_data.jsp";
-			} else {
-				System.out.println("NULL");
-				page = "/error.jsp";
-				request.setAttribute("ErrorMessage", "Credenciais inválidas");
-			}
 
-			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(page);
-			dispatcher.forward(request, response);
+			User user = new User();
+			
+			user.setName(request.getParameter("nome"));
+			user.setEmail(request.getParameter("email"));
+			user.setCpf(request.getParameter("cpf"));
+			user.setPhone(request.getParameter("telefone"));
+			user.setBirthDate(LocalDate.parse(request.getParameter("data_nascimento")));
+			user.setPhoto(request.getParameter("foto"));
+			user.setPassword(request.getParameter("senha"));
+			user.setCreationDate(LocalDate.parse("2003-05-03"));
+			user.setLastAccess(LocalDate.parse("2003-05-03"));
+			
+			Address address = new Address();
+
+			DataSource dataSource = new DataSource();
+			
+			UserDao userDao = new UserDao(dataSource);
+			userDao.create(user);
+
+			dataSource.getConnection().close();
+
 			
 		} catch (Exception e) {
 	        throw new ServletException("Login failed", e);
@@ -52,7 +56,7 @@ public class LoginServlet extends HttpServlet {
 		}
 	}
 	
-	private User searchUser(String email, String password) throws SQLException {
+	private User registerUser(String email, String password) {
 //		if(email.equals("gulliver@traveller.com") && password.equals("123")) {
 //			User result = new User();
 //			
@@ -79,9 +83,8 @@ public class LoginServlet extends HttpServlet {
 		
 		DataSource dataSource = new DataSource();
 		UserDao userDao = new UserDao(dataSource);
-		User retorno = userDao.getByEmailSenha(email, password);
 		
-		dataSource.getConnection().close();
+		User retorno = userDao.getByEmailSenha(email, password);
 		
 		System.out.println("PEGUEI USER DO DAOOOOOOOOOOOO");
 		

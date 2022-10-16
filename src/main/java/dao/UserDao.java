@@ -2,6 +2,8 @@ package dao;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 import model.Address;
@@ -17,7 +19,37 @@ public class UserDao implements DaoBase<User> {
 
 	@Override
 	public void create(User object) {
-		// TODO Auto-generated method stub
+		try {
+			String sql = "INSERT INTO TB_USUARIO "
+					+ " (NOME, EMAIL,CPF,CELULAR,DATA_NASCIMENTO,FOTO,SENHA,DATA_CRIACAO,ULTIMO_ACESSO) "
+					+ " VALUES "
+					+ "(?, ?, ?, ?, ?, ?, ?, ?, ?)";
+			
+			PreparedStatement stm = dataSource.getConnection().prepareStatement(sql);
+			stm.setString(1, object.getName());
+			stm.setString(2, object.getEmail());
+			stm.setString(3, object.getCpf());
+			stm.setString(4, object.getPhone());
+			stm.setString(5, object.getBirthDate().format(DateTimeFormatter.ofPattern("dd/MM/YYY")));
+			stm.setString(6, object.getPhoto());
+			stm.setString(7, object.getPassword());
+			stm.setString(8, object.getCreationDate().format(DateTimeFormatter.ofPattern("dd/MM/YYY")));
+			stm.setString(9, object.getLastAccess().format(DateTimeFormatter.ofPattern("dd/MM/YYY")));
+			
+			int res = stm.executeUpdate();
+			
+			if (res != 0) {
+				System.out.println("Usuario criado com sucesso");
+			} else {
+				throw new RuntimeException("Erro ao atualizar usuario ");
+			}
+			
+			
+		}catch (Exception ex) {
+			ex.printStackTrace();
+			System.out.println("UsuarioDAO.create = " + ex.getMessage());
+		}
+
 		
 	}
 
@@ -128,10 +160,8 @@ public class UserDao implements DaoBase<User> {
 			return null;
 		}
 		
-		
-		
 	}
-
+	
 	public DataSource getDataSource() {
 		return dataSource;
 	}

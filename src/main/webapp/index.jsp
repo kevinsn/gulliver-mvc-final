@@ -90,6 +90,9 @@
              <form method="post" action="login.jsp" >
             	<button type="submit"  class="login">Login</button>
              </form>
+             <form method="post" action="signup.jsp" >
+            	<button type="submit"  class="signup">Cadastrar</button>
+             </form>
           </div>
         </div>
         <div class="row">

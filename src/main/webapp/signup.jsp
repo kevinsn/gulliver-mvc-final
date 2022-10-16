@@ -1,5 +1,5 @@
 <!doctype html>
-<jsp:useBean id="User" type="model.User" scope="session"/> 
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
 <html lang="pt-br">
 
@@ -64,22 +64,22 @@
                 <button class="btn btn-outline-light " id="alterar"> <i class="fas fa-user-edit"></i> Alterar seus dados</button>
             </p>
 
-            <form method="post" id="dados-conta" action="">
+            <form method="post" id="dados-conta" action="signup">
 
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-6">
                         <div class="form-group ">
                             <label for="nome" class="titulos">Nome</label>
-                            <input type="text" class="form-control alterar" id="nome" name="nome" value="<c:out value="${User.name}"/>"
-                                disabled required>
+                            <input type="text" class="form-control alterar" id="nome" name="nome" value="" 
+                                required>
                         </div>
                     </div>
 
                     <div class="col-12 col-sm-12 col-md-4">
                         <div class="form-group">
                             <label for="email" class="titulos alterar">Email</label>
-                             <input type="email" class="form-control alterar" id="email" name="email" value="<c:out value="${User.email}"/>"
-                                disabled required>
+                             <input type="email" class="form-control alterar" id="email" name="email" value=""
+                                required>
                         </div>
                     </div>
                     
@@ -87,7 +87,7 @@
                         <div class="form-group">
                             <label for="cpf" class="titulos">CPF</label>
                             <div class="input-group mb-2">
-                                <input type="text" class="form-control alterar" id="cpf" name="cpf" value="<c:out value="${User.cpf}"/>" disabled>
+                                <input type="text" class="form-control alterar" id="cpf" name="cpf" value="" >
                             </div>
                         </div>
                     </div>
@@ -98,71 +98,91 @@
                         <div class="form-group">
                             <label for="telefone" class="titulos">Celular</label>
                             <input class="form-control alterar" id="telefone" name="telefone"
-                                value="<c:out value="${User.phone}"/>" disabled required>
+                                value="" required>
                         </div>
                     </div>
                     <div class="col-12 col-sm-12 col-md-2">
                         <div class="form-group">
                             <label for="data_nascimento" class="titulos">Data de Nascimento</label>
                             <input type="date" class="form-control alterar" id="data_nascimento" name="data_nascimento"
-                                value="<c:out value="${User.birthDate}"/>" disabled required>
+                                value="" required>
                         </div>
                     </div>
                     <div class="col-12 col-sm-12 col-md-8">
                         <div class="form-group">
                             <label for="foto" class="titulos">Foto</label>
-                            <input type="file" class="form-control alterar" id="foto" name="foto" disabled required>
+                            <input type="text" class="form-control alterar" id="foto" name="foto" required>
                         </div>
                     </div>
                 </div>
 
+                <div class="row">                
+                    <div class="col-12 col-sm-12 col-md-6">
+                        <div class="form-group disabled">
+                            <label for="senha" class="titulos">Senha</label>
+                            <div class="input-group mb-2">
+                                <input type="password" class="form-control alterar" id="senha" name="senha"
+                                    placeholder="Sua nova senha">
+                            </div>
+                        </div>
+                    </div>           
+                    <div class="col-12 col-sm-12 col-md-6">
+                        <div class="form-group disabled">
+                            <label for="confirmarSenha" class="titulos">Confirmar Senha</label>
+                            <div class="input-group mb-2">
+                                <input type="password" class="form-control alterar" id="confirmarSenha" name="confirmarSenha"
+                                    placeholder="Confirmar sua nova senha">
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-2">
                         <div class="form-group">
                             <label for="cep" class="titulos">CEP</label>
                             <input class="form-control alterar" id="cep" name="cep"
-                                value="<c:out value="${User.address.postalCode}"/>" disabled required>
+                                value="" required>
                         </div>
                     </div>
                     <div class="col-12 col-sm-12 col-md-1">
                         <div class="form-group">
                             <label for="estado" class="titulos">Estado</label>
                             <input class="form-control alterar" id="estado" name="estado"
-                                value="<c:out value="${User.address.state}"/>" disabled required>
+                                value="" required>
                         </div>
                     </div>
 					<div class="col-12 col-sm-12 col-md-3">
                         <div class="form-group">
                             <label for="cidade" class="titulos">Cidade</label>
                             <input class="form-control alterar" id="cidade" name="cidade"
-                                value="<c:out value="${User.address.city}"/>" disabled required>
+                                value="" required>
                         </div>
                     </div>
 					<div class="col-12 col-sm-12 col-md-3">
                         <div class="form-group">
                             <label for="logradouro" class="titulos">Logradouro</label>
                             <input class="form-control alterar" id="logradouro" name="logradouro"
-                                value="<c:out value="${User.address.publicArea}"/>" disabled required>
+                                value="" required>
                         </div>
                     </div>
 					<div class="col-12 col-sm-12 col-md-1">
                         <div class="form-group">
                             <label for="numero" class="titulos">Numero</label>
                             <input class="form-control alterar" id="numero" name="numero"
-                                value="<c:out value="${User.address.number}"/>" disabled required>
+                                value="" required>
                         </div>
                     </div>
 					<div class="col-12 col-sm-12 col-md-2">
                         <div class="form-group">
                             <label for="complemento" class="titulos">Complemento</label>
                             <input class="form-control alterar" id="complemento" name="complemento"
-                                value="<c:out value="${User.address.additionalInfo}"/>" disabled required>
+                                value="" required>
                         </div>
                     </div>
                 </div>
 
                 <div class="d-flex justify-content-end">
-                    <button type="submit" class="btn gravar" id="gravar" disabled>Gravar Alteracoes</button>
+                    <button type="submit" class="btn gravar" id="gravar">Gravar Alteracoes</button>
                 </div>
 
             </form>
