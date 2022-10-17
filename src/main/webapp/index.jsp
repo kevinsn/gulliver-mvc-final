@@ -31,6 +31,7 @@
     integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
     crossorigin=""></script>
     <link rel="stylesheet" href="./assets/css/styles.css">
+     <script type = "text/javascript" src="./assets/js/api.js"></script>
 
     <title>Gulliver Traveller</title>
 </head>
@@ -41,47 +42,45 @@
 
   <header>
     <div class="container-fluid p-0">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="./assets/img//logo1 (2).svg" alt=""></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <div class="ms-auto"></div>
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link"  href="#hospedagem">Hospedagem</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#alugarcarro">Alugar Carros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#gastronomialocal">Gastronomia</a>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Mais
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#comochegar">Como Chegar</a></li>
-                  <li><a class="dropdown-item" href="#vidanoturna">Vida Noturna</a></li>
-                  <li><a class="dropdown-item" href="#cultura">Cultura</a></li>
-                  <li><a class="dropdown-item" href="#entretenimento">Entretenimento</a></li>
-                  <li><a class="dropdown-item" href="#dicasuteis">Dicas Úteis</a></li>
-                  <li><a class="dropdown-item" href="parques.html">Parques</a></li>
-
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+        <nav class="navbar navbar-expand-lg navbar-light nav-color">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.jsp"><img class="img-fluid" src="./assets/img/logo1.svg" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse navbar-itens-color" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Hospedagem</a>
+                        </li>
+		             	<li class="nav-item">
+		               		<a class="nav-link active" href="aluguel_veiculos.jsp">Alugar Carros</a>
+		             	</li>
+		                <li class="nav-item">
+		                    <a class="nav-link" href="#">Gastronomia</a>
+		                </li>
+		                <li class="nav-item dropdown">
+			                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+			                  aria-expanded="false">
+			                  Mais
+			                </a>
+			                <ul class="dropdown-menu">
+			                  <li><a class="dropdown-item" href="dicas_parques_e_como_chegar.jsp">Dicas Úteis</a></li>
+			                  <li><a class="dropdown-item" href="dicas_parques_e_como_chegar.jsp">Parques</a></li>
+			                  <li><a class="dropdown-item" href="dicas_parques_e_como_chegar.jsp">Como Chegar</a></li>
+			                  <li><a class="dropdown-item" href="cultura_historia_entretenimento_vida.jsp">Cultura</a></li>
+			                  <li><a class="dropdown-item" href="cultura_historia_entretenimento_vida.jsp">História</a></li>
+			                  <li><a class="dropdown-item" href="cultura_historia_entretenimento_vida.jsp">Entretenimento</a></li>
+			                  <li><a class="dropdown-item" href="cultura_historia_entretenimento_vida.jsp">Vida Noturna</a></li>
+			                </ul>
+			            </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </div>
-
 
     <div class="container cabecalho-banner">
       <div class="row">
@@ -158,7 +157,6 @@
                   experientes.</p>
 
               </div>
-
             </div>
           </div>
         </div>
@@ -637,7 +635,72 @@
 
 
   </main>
-
+   <section id="hospedagens" class="sec-2 hospedagens">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="borda-titulo">
+                            <h1 class="titulo-hospedagens">Hóteis próximos a você</h1>
+                          </div>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-12 row-cols-lg-12 row-cols-xl-3 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <img src="./img/renaissence.png" class="card-img-top" alt="...">
+                        </div>
+                        <div id="map"> </div>
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <h3 class="card-price"></h3>
+                            <div class="aval-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                              </div>
+                              <a id="btn-modal" class=" box btn bg-warning mr-2" onclick="getMore(0)"> Saiba mais </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./imagens/renaissence.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <h3 class="card-price"></h3>
+                            <div class="aval-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                              </div>
+                              <a id="btn-modal" class=" box btn bg-warning mr-2" onclick="getMore(1)"> Saiba mais </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card ">
+                            <img src="./imagens/blue-tree.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <h3 class="card-price"></h3>
+                            <div class="aval-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                              </div>
+                              <a id="btn-modal" class=" box btn bg-warning mr-2" onclick="getMore(2)"> Saiba mais </a>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </section>
+        
   <footer>
     <div class="container">
       <div class="row">
