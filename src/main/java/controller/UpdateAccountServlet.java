@@ -25,6 +25,8 @@ public class UpdateAccountServlet extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException {
 		
+		String page = "";
+		
 		try {
 
 			User user = new User();
@@ -46,6 +48,11 @@ public class UpdateAccountServlet extends HttpServlet {
 			userDao.update(user);
 
 			dataSource.getConnection().close();
+
+			page = "/login.jsp";
+			
+			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(page);
+			dispatcher.forward(request, response);
 
 			
 		} catch (Exception e) {

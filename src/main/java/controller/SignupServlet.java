@@ -24,7 +24,7 @@ public class SignupServlet extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException {
 		
-		String paginaDestino = "";
+		String page = "";
 		
 		try {
 
@@ -49,6 +49,10 @@ public class SignupServlet extends HttpServlet {
 
 			dataSource.getConnection().close();
 
+			page = "/login.jsp";
+			
+			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(page);
+			dispatcher.forward(request, response);
 			
 		} catch (Exception e) {
 	        throw new ServletException("Login failed", e);
