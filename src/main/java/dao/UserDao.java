@@ -20,7 +20,7 @@ public class UserDao implements DaoBase<User> {
 	@Override
 	public void create(User object) {
 		try {
-			String sql = "INSERT INTO TB_USUARIO "
+			String sql = "INSERT INTO RM94253.TB_USUARIO "
 					+ " (NOME, EMAIL,CPF,CELULAR,DATA_NASCIMENTO,FOTO,SENHA,DATA_CRIACAO,ULTIMO_ACESSO) "
 					+ " VALUES "
 					+ "(?, ?, ?, ?, ?, ?, ?, ?, ?)";
@@ -41,7 +41,7 @@ public class UserDao implements DaoBase<User> {
 			if (res != 0) {
 				System.out.println("Usuario criado com sucesso");
 			} else {
-				throw new RuntimeException("Erro ao atualizar usuario ");
+				throw new RuntimeException("Erro ao criar usuario ");
 			}
 			
 			
@@ -61,8 +61,40 @@ public class UserDao implements DaoBase<User> {
 
 	@Override
 	public void update(User object) {
-		// TODO Auto-generated method stub
-		
+		try {
+			String sql = "UPDATE RM94253.TB_USUARIO "
+					+ "SET NOME = ?, "
+					+ "EMAIL = ?, "
+					+ "CPF = ?, "
+					+ "CELULAR = ?, "
+					+ "DATA_NASCIMENTO = ?, "
+					+ "FOTO = ?, "
+					+ "SENHA = ? "
+					+ "WHERE ID_USUARIO = ?";
+			
+			PreparedStatement stm = dataSource.getConnection().prepareStatement(sql);
+			stm.setString(1, object.getName());
+			stm.setString(2, object.getEmail());
+			stm.setString(3, object.getCpf());
+			stm.setString(4, object.getPhone());
+			stm.setString(5, object.getBirthDate().format(DateTimeFormatter.ofPattern("dd/MM/YYY")));
+			stm.setString(6, object.getPhoto());
+			stm.setString(7, object.getPassword());
+			stm.setInt(8, 1);
+			
+			int res = stm.executeUpdate();
+			
+			if (res != 0) {
+				System.out.println("Usuario atualizado com sucesso");
+			} else {
+				throw new RuntimeException("Erro ao atualizar usuario ");
+			}
+			
+			
+		}catch (Exception ex) {
+			ex.printStackTrace();
+			System.out.println("UsuarioDAO.update = " + ex.getMessage());
+		}
 	}
 
 	@Override

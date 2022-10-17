@@ -17,7 +17,7 @@
 		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
 		</script>
 	    <link rel="stylesheet" href="./assets/css/styles.css">
-	
+		<script type="text/javascript" src="./assets/js/script.js"></script>
 	    <title>Traveller MVC</title>
 	</head>
 
@@ -61,10 +61,10 @@
             </div>
 
             <p class="p-3 conteudo text-light alterar">Dados da conta
-                <button class="btn btn-outline-light " id="alterar"> <i class="fas fa-user-edit"></i> Alterar seus dados</button>
+                <button class="btn btn-outline-light " id="alterar"  onclick="habilitarCampos()"> <i class="fas fa-user-edit"></i> Alterar seus dados</button>
             </p>
 
-            <form method="post" id="dados-conta" action="">
+            <form method="post" id="dados-conta" action="./update_account">
 
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-6">
@@ -111,7 +111,7 @@
                     <div class="col-12 col-sm-12 col-md-8">
                         <div class="form-group">
                             <label for="foto" class="titulos">Foto</label>
-                            <input type="file" class="form-control alterar" id="foto" name="foto" disabled required>
+                            <input type="text" class="form-control alterar" id="foto" name="foto" disabled required>
                         </div>
                     </div>
                 </div>
