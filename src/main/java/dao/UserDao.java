@@ -68,8 +68,9 @@ public class UserDao implements DaoBase<User> {
 					+ "CPF = ?, "
 					+ "CELULAR = ?, "
 					+ "DATA_NASCIMENTO = ?, "
-					+ "FOTO = ?, "
-					+ "SENHA = ? "
+					+ "FOTO = ? "
+//					+ "FOTO = ?, "
+//					+ "SENHA = ? "
 					+ "WHERE ID_USUARIO = ?";
 			
 			PreparedStatement stm = dataSource.getConnection().prepareStatement(sql);
@@ -79,8 +80,9 @@ public class UserDao implements DaoBase<User> {
 			stm.setString(4, object.getPhone());
 			stm.setString(5, object.getBirthDate().format(DateTimeFormatter.ofPattern("dd/MM/YYY")));
 			stm.setString(6, object.getPhoto());
-			stm.setString(7, object.getPassword());
-			stm.setInt(8, 1);
+//			stm.setString(7, object.getPassword());
+//			stm.setInt(8, object.getId());
+			stm.setInt(7, object.getId());
 			
 			int res = stm.executeUpdate();
 			

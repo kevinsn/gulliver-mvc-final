@@ -63,9 +63,10 @@
             <p class="p-3 conteudo text-light alterar">Dados da conta
                 <button class="btn btn-outline-light " id="alterar"  onclick="habilitarCampos()"> <i class="fas fa-user-edit"></i> Alterar seus dados</button>
             </p>
+            
 
             <form method="post" id="dados-conta" action="./update_account">
-
+                
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-6">
                         <div class="form-group ">

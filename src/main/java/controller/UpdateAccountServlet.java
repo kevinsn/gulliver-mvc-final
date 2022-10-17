@@ -28,14 +28,15 @@ public class UpdateAccountServlet extends HttpServlet {
 		try {
 
 			User user = new User();
-			
+
+			user.setId((int) request.getSession().getAttribute("Id"));
 			user.setName(request.getParameter("nome"));
 			user.setEmail(request.getParameter("email"));
 			user.setCpf(request.getParameter("cpf"));
 			user.setPhone(request.getParameter("telefone"));
 			user.setBirthDate(LocalDate.parse(request.getParameter("data_nascimento")));
 			user.setPhoto(request.getParameter("foto"));
-			user.setPassword(request.getParameter("senha"));
+//			user.setPassword(request.getParameter("senha"));
 			
 			Address address = new Address();
 

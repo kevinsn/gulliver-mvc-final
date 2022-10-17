@@ -36,6 +36,9 @@ public class LoginServlet extends HttpServlet {
 			if(user != null) {
 				System.out.println("NOT NULL");
 				request.getSession().setAttribute("User", user);
+				request.getSession().setAttribute("Id", user.getId());
+				
+				System.out.println(request.getSession().getAttribute("Id"));
 				page = "/user_data.jsp";
 			} else {
 				System.out.println("NULL");
