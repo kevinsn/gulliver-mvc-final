@@ -61,12 +61,6 @@
                 <a class="nav-link" href="#gastronomialocal">Gastronomia</a>
               </li>
 
-             <form method="post" action="login.jsp" >
-            	<button type="submit"  class="login">Login</button>
-             </form>
-             <form method="post" action="signup.jsp" >
-            	<button type="submit"  class="signup">Cadastrar</button>
-             </form>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                   aria-expanded="false">
@@ -114,6 +108,9 @@
           <a href="login.jsp">
             <button type="button" class="btn btn-outline-secondary botao-login"
               style="font-weight: bold;">Login</button></a>
+          <a href="signup.jsp">
+            <button type="button" class="btn btn-outline-secondary botao-login"
+              style="font-weight: bold;">Cadastrar</button></a>
         </div>
         <div class="row">
           <div class="col-md-12">
