@@ -139,6 +139,7 @@ header .nav-item:last-child {
     background-color: var(--orange-p) !important;
     color: var(--white-p) !important;
     border-radius: 35px !important;
+    margin-top: 5px;
 }
 
 .botao-login:hover {
