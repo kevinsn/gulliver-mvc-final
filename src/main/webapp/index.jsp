@@ -164,6 +164,9 @@
       </div>
     </div>
 
+	  
+	  
+
     <!--HOSPEDAGEM-->
     <section class="sec-1 serviços">
       <div class="container text-center">
@@ -172,7 +175,7 @@
           <h1 class="d-flex justify-content-center" style="color: #073673; font-weight:bolder; font-size: 32px;">
             Serviços que oferecemos para vocês: </h1>
 
-          <img class="img-fluid" src="./assets/img/serviços.svg" alt="serviços que oferecemos">
+          <img class="img-fluid" src="imgs/serviços.svg" alt="serviços que oferecemos">
         </div>
     </section>
 
@@ -279,6 +282,7 @@
       </div>
     </section>
     </div>
+
 
 
 
