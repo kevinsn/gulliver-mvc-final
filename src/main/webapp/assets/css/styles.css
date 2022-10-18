@@ -598,7 +598,7 @@ em{
     height: 500px;
     display: inline-block;
     padding: 60px;
-    margin: 5px;
+    margin: 2px;
     justify-content: center;
     text-align: center;
     border-radius: 5px;
@@ -613,6 +613,11 @@ em{
     font-size: 32px;
 
 
+}
+
+.card-text{
+	font-size: 20px;
+	
 }
 
 .card-carro {
