@@ -40,6 +40,54 @@ header{
     background-color: var(--blue-p);
 }
 
+
+header .navbar-brand {
+    padding-left: 8rem;
+}
+
+header .nav-item {
+    padding: 0.9rem;
+}
+
+header .nav-item:last-child {
+    padding-right: 10.5rem;
+}
+
+.dropdown-menu {
+    background-color: var(--orange-p) !important;
+}
+
+.dropdown-menu a:hover {
+    background-color: var(--blue-p) !important;
+    color: var(--white-p) !important;
+}
+
+.cabecalho-banner {
+    padding-top: 5rem;
+}
+
+.mold-oval {
+    width: 241px;
+    height: 309px;
+    border: 11px solid var(--orange-p);
+    border-radius: 100px;
+    background-image: url(../img/Travel-Demand-is-Back-to-Pre-Pandemic-Levels-and-What-it-Means-To-You-This-Summer.jpg);
+    background-position: 50%;
+    background-size: cover;
+}
+
+.mold-oval-sec {
+    width: 241px;
+    height: 309px;
+    margin-top: 5rem;
+    border: 11px solid var(--orange-p);
+    border-radius: 100px;
+    background-image: url(../img/mobile-hero-480x794-flight-interantional-students.png);
+    background-size: 120%;
+    background-position: 20%;
+    background-repeat: no-repeat;
+}
+
 .texto{
     margin-top: 5%;
     color: var(--white-p);
@@ -824,7 +872,6 @@ iframe{
     
 }
 
-/*
 @media (min-width: 282px) and (max-width: 900px) {
     .input-form {
     display: inline-block;
