@@ -177,7 +177,7 @@
           <h1 class="d-flex justify-content-center" style="color: #073673; font-weight:bolder; font-size: 32px;">
             Serviços que oferecemos para vocês: </h1>
 
-          <img class="img-fluid" src="../img/servicos.svg" alt="serviços que oferecemos">
+          <img class="img-fluid" src="../img/servicos.png" alt="serviços que oferecemos">
         </div>
     </section>
 
