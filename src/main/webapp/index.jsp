@@ -32,6 +32,8 @@
     crossorigin=""></script>
     <link rel="stylesheet" href="./assets/css/styles.css">
      <script type = "text/javascript" src="./assets/js/api.js"></script>
+	     <script type = "text/javascript" src="./assets/js/index.js"></script>
+
 
     <title>Gulliver Traveller</title>
 </head>
