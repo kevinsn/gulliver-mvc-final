@@ -95,15 +95,29 @@ header .nav-item:last-child {
     margin-left: 4%;
 }
 
-.texto h1{
+
+.texto-1 {
+    padding-top: 5rem;
+    color: var(--white-p);
+}
+
+.texto-1 h1 {
     margin-bottom: 2rem;
     font-size: 2rem;
     font-weight: 900;
 }
-.texto p{
+
+.texto-1 p {
     margin-bottom: 2rem;
     text-align: left;
 }
+
+.texto-1 img {
+    width: 35px;
+    height: 35px;
+}
+
+
 
 .login{
     width: 200px;
@@ -115,6 +129,24 @@ header .nav-item:last-child {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     font-family: 'Lato', sans-serif;
 
+}
+
+
+
+.botao-login {
+    width: 220px;
+    height: 60px;
+    background-color: var(--orange-p) !important;
+    color: var(--white-p) !important;
+    border-radius: 35px !important;
+}
+
+.botao-login:hover {
+    background-color: rgb(143, 143, 143);
+    cursor: pointer;
+    font-weight: bold;
+    transform: scale(1.1);
+    transition: all 0.5s;
 }
 
 .login:hover{
