@@ -410,7 +410,7 @@
             <div class="card-body">
               <h5 class="card-title">Peugeot 3008 GT line</h5>
               <p class="card-text"> Para sua viagem ser ainda mais inesquecível, conheça o novo PEUGEOT 3008 e o seu
-                estilo revolucionário único. Com inhas poderosas, dinamismo e fluidez.
+                estilo revolucionário único. 
               </p>
               <a href="https://www.localiza.com/brasil/pt-br?gclid=Cj0KCQjwpeaYBhDXARIsAEzItbF_uSRuIz65-aTsGH3VJv_YGIb_-JhT6gHrH9Vscisyb8-naEjtxWwaAi29EALw_wcB"
                 class=" box btn bg-dark mr-2  text-light"> Acessar </a>
