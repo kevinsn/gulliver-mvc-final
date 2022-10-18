@@ -32,6 +32,8 @@
     crossorigin=""></script>
     <link rel="stylesheet" href="./assets/css/styles.css">
      <script type = "text/javascript" src="./assets/js/api.js"></script>
+	     <script type = "text/javascript" src="./assets/js/index.js"></script>
+
 
     <title>Gulliver Traveller</title>
 </head>
@@ -175,7 +177,7 @@
           <h1 class="d-flex justify-content-center" style="color: #073673; font-weight:bolder; font-size: 32px;">
             Serviços que oferecemos para vocês: </h1>
 
-          <img class="img-fluid" src="imgs/serviços.svg" alt="serviços que oferecemos">
+          <img class="img-fluid" src="../img/servicos.png" alt="serviços que oferecemos">
         </div>
     </section>
 
@@ -300,7 +302,7 @@
                 <div class="col-lg-6 col-xxl-4 mb-5">
                   <div class="card bg-light border-0 h-100">
                     <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                      <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"></div>
+                      <div class="feature bg-light bg-gradient text-white rounded-3 mb-4 mt-n4"></div>
                       <h2 class="fs-4 fw-bold">By Koji</h2>
                       <p class="mb-0">O chef Koji Yokomizo é o nome à frente do By Koji, com 3 casas em São Paulo,
                         oferece gastronomia japonesa com um toque
@@ -640,71 +642,6 @@
 
 
   </main>
-   <section id="hospedagens" class="sec-2 hospedagens">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="borda-titulo">
-                            <h1 class="titulo-hospedagens">Hóteis próximos a você</h1>
-                          </div>
-                    </div>
-                </div>
-                <div class="row row-cols-1 row-cols-md-12 row-cols-lg-12 row-cols-xl-3 g-4">
-                    <div class="col">
-                        <div class="card">
-                            <img src="./img/renaissence.png" class="card-img-top" alt="...">
-                        </div>
-                        <div id="map"> </div>
-                        <div class="card-body">
-                            <h5 class="card-title"></h5>
-                            <h3 class="card-price"></h3>
-                            <div class="aval-stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                              </div>
-                              <a id="btn-modal" class=" box btn bg-warning mr-2" onclick="getMore(0)"> Saiba mais </a>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <img src="./imagens/renaissence.png" class="card-img-top" alt="...">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title"></h5>
-                            <h3 class="card-price"></h3>
-                            <div class="aval-stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                              </div>
-                              <a id="btn-modal" class=" box btn bg-warning mr-2" onclick="getMore(1)"> Saiba mais </a>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card ">
-                            <img src="./imagens/blue-tree.png" class="card-img-top" alt="...">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title"></h5>
-                            <h3 class="card-price"></h3>
-                            <div class="aval-stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                              </div>
-                              <a id="btn-modal" class=" box btn bg-warning mr-2" onclick="getMore(2)"> Saiba mais </a>
-                        </div>
-                    </div>
-                </div>
-            </div>    
-        </section>
  
   <footer>
     <div class="container">
@@ -719,7 +656,7 @@
           <h2 class="contact"><i class="fa-solid fa-envelope  p-2"></i>Gullivertraveller@gmail.com</h2>
         </div>
         <div class="col-md-6 col-sm-12 col-12">
-          <img src="imgs/call-center (1).gif" class="assistant-virtual col-12 img-fluid" alt="assistente virtual">
+          <img src="../img/call-center (1).gif" class="assistant-virtual col-12 img-fluid" alt="assistente virtual">
         </div>
       </div>
       <div class="row">
