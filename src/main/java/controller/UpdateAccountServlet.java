@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import dao.AddressDao;
 import dao.DataSource;
 import dao.UserDao;
 import model.Address;
@@ -40,14 +41,41 @@ public class UpdateAccountServlet extends HttpServlet {
 			user.setPhoto(request.getParameter("foto"));
 //			user.setPassword(request.getParameter("senha"));
 			
-			Address address = new Address();
-
 			DataSource dataSource = new DataSource();
 			
 			UserDao userDao = new UserDao(dataSource);
 			userDao.update(user);
 
 			dataSource.getConnection().close();
+			
+			//=================
+
+            DataSource dataSource2 = new DataSource();
+            
+            UserDao userDao2 = new UserDao(dataSource2);
+            userDao2.getByEmailSenha(user.getEmail(), user.getPassword());
+
+            Address address = new Address();
+            
+            address.setPostalCode(request.getParameter("cep"));
+            address.setState(request.getParameter("estado"));
+            address.setCity(request.getParameter("cidade"));
+            address.setNeighborhood(request.getParameter("bairro"));
+            address.setPublicArea(request.getParameter("logradouro"));
+            address.setNumber(Integer.valueOf(request.getParameter("numero")));
+            address.setAdditionalInfo(request.getParameter("complemento"));
+            address.setIdUser((int) request.getSession().getAttribute("Id"));
+            
+            dataSource2.getConnection().close();
+            
+            //=================
+            
+            DataSource dataSource3 = new DataSource();
+            
+            AddressDao addressDao = new AddressDao(dataSource3);
+            addressDao.update(address);
+
+            dataSource3.getConnection().close();
 
 			page = "/login.jsp";
 			
