@@ -10,6 +10,8 @@ public class Address {
 	private String publicArea;
 	private int number;
 	private String additionalInfo;
+	private int idUser;
+	
 	public int getId() {
 		return id;
 	}
@@ -58,5 +60,10 @@ public class Address {
 	public void setAdditionalInfo(String additionalInfo) {
 		this.additionalInfo = additionalInfo;
 	}
-	
+    public int getIdUser() {
+        return idUser;
+    }
+    public void setIdUser(int idUser) {
+        this.idUser = idUser;
+    }
 }

@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import dao.AddressDao;
 import dao.DataSource;
 import dao.UserDao;
 import model.Address;
@@ -40,8 +41,20 @@ public class SignupServlet extends HttpServlet {
 			user.setCreationDate(LocalDate.parse("2003-05-03"));
 			user.setLastAccess(LocalDate.parse("2003-05-03"));
 			
+            DataSource dataSource = new DataSource();
+            
+            UserDao userDao = new UserDao(dataSource);
+            userDao.create(user);
+
+            dataSource.getConnection().close();
+            
 			Address address = new Address();
-			
+
+            DataSource dataSource2 = new DataSource();
+            
+            UserDao userDao2 = new UserDao(dataSource2);
+            User userAddress = userDao2.getByEmailSenha(request.getParameter("email"), request.getParameter("senha"));
+            
 			address.setPostalCode(request.getParameter("cpf"));
 			address.setState(request.getParameter("estado"));
 			address.setCity(request.getParameter("cidade"));
@@ -49,14 +62,14 @@ public class SignupServlet extends HttpServlet {
 			address.setPublicArea(request.getParameter("logradouro"));
 			address.setNumber(Integer.valueOf(request.getParameter("numero")));
 			address.setAdditionalInfo(request.getParameter("complemento"));
+			address.setIdUser(userAddress.getId());
 
-			DataSource dataSource = new DataSource();
-			
-			UserDao userDao = new UserDao(dataSource);
-			userDao.create(user);
+            dataSource2.getConnection().close();
 
-			dataSource.getConnection().close();
-
+            DataSource dataSource3 = new DataSource();
+            AddressDao addressDao = new AddressDao(dataSource3);
+            addressDao.create(address);
+            
 			page = "/login.jsp";
 			
 			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(page);
