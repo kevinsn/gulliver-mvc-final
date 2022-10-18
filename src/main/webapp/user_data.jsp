@@ -68,7 +68,7 @@
             <form method="post" id="dados-conta" action="./update_account">
                 
                 <div class="row">
-                    <div class="col-12 col-sm-12 col-md-6">
+                    <div class="col-12 col-sm-12 col-md-5">
                         <div class="form-group ">
                             <label for="nome" class="titulos">Nome</label>
                             <input type="text" class="form-control alterar" id="nome" name="nome" value="<c:out value="${User.name}"/>"
@@ -76,7 +76,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-12 col-md-4">
+                    <div class="col-12 col-sm-12 col-md-3">
                         <div class="form-group">
                             <label for="email" class="titulos alterar">Email</label>
                              <input type="email" class="form-control alterar" id="email" name="email" value="<c:out value="${User.email}"/>"
@@ -92,9 +92,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="row">
                     <div class="col-12 col-sm-12 col-md-2">
                         <div class="form-group">
                             <label for="telefone" class="titulos">Celular</label>
@@ -102,6 +99,9 @@
                                 value="<c:out value="${User.phone}"/>" disabled required>
                         </div>
                     </div>
+                </div>
+
+                <div class="row">
                     <div class="col-12 col-sm-12 col-md-2">
                         <div class="form-group">
                             <label for="data_nascimento" class="titulos">Data de Nascimento</label>
@@ -109,15 +109,6 @@
                                 value="<c:out value="${User.birthDate}"/>" disabled required>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-12 col-md-8">
-                        <div class="form-group">
-                            <label for="foto" class="titulos">Foto</label>
-                            <input type="text" class="form-control alterar" id="foto" name="foto" disabled required>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
                     <div class="col-12 col-sm-12 col-md-2">
                         <div class="form-group">
                             <label for="cep" class="titulos">CEP</label>
@@ -132,13 +123,24 @@
                                 value="<c:out value="${User.address.state}"/>" disabled required>
                         </div>
                     </div>
-					<div class="col-12 col-sm-12 col-md-3">
+					<div class="col-12 col-sm-12 col-md-4">
                         <div class="form-group">
                             <label for="cidade" class="titulos">Cidade</label>
                             <input class="form-control alterar" id="cidade" name="cidade"
                                 value="<c:out value="${User.address.city}"/>" disabled required>
                         </div>
                     </div>
+                    <div class="col-12 col-sm-12 col-md-3">
+                        <div class="form-group">
+                            <label for="bairro" class="titulos">Bairro</label>
+                            <input class="form-control alterar" id="bairro" name="bairro"
+                                value="<c:out value="${User.address.neighborhood}"/>" disabled required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    
 					<div class="col-12 col-sm-12 col-md-3">
                         <div class="form-group">
                             <label for="logradouro" class="titulos">Logradouro</label>
@@ -160,6 +162,24 @@
                                 value="<c:out value="${User.address.additionalInfo}"/>" disabled required>
                         </div>
                     </div>
+                    <div class="col-12 col-sm-12 col-md-3	">
+						<div class="form-group disabled">
+							<label for="senha" class="titulos">Digite sua senha</label>
+							<div class="input-group mb-2">
+								<input type="password" class="form-control alterar" id="senha" name="senha"
+									disabled required>
+							</div>
+						</div>
+					</div>              
+					<div class="col-12 col-sm-12 col-md-3">
+						<div class="form-group disabled">
+							<label for="confirmar_senha" class="titulos">Redigite sua senha</label>
+							<div class="input-group mb-2">
+								<input type="password" class="form-control alterar" id="confirma_senha" name="confirma_senha"
+									disabled required>
+							</div>
+						</div>
+					</div>  
                 </div>
 
                 <div class="d-flex justify-content-end">

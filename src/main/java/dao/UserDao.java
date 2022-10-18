@@ -151,7 +151,7 @@ public class UserDao implements DaoBase<User> {
 				user.setCpf(rs.getString("CPF"));
 				user.setPhone(rs.getString("CELULAR"));
 				user.setBirthDate(rs.getDate("DATA_NASCIMENTO").toLocalDate());
-				user.setPhoto(rs.getString("FOTO"));
+//				user.setPhoto(rs.getString("FOTO"));
 				user.setPassword(rs.getString("SENHA"));
 				user.setCreationDate(rs.getDate("DATA_CRIACAO").toLocalDate());
 				user.setLastAccess(rs.getDate("ULTIMO_ACESSO").toLocalDate());

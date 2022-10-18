@@ -55,31 +55,28 @@
 
         <div class="container my-5">
             <div class="text-center mb-5">
-                <img src="${User.photo}" class="logo" alt="">
-                <h2 class="my-1">Bem vindo <c:out value="${User.name}"/>!</h2>
-                <p><c:out value="${User.email}"/></p>
+                <h2 class="my-1">Prencha os seus dados para cadastro</h2>
             </div>
 
             <p class="p-3 conteudo text-light alterar">Dados da conta
-                <button class="btn btn-outline-light " id="alterar"> <i class="fas fa-user-edit"></i> Alterar seus dados</button>
             </p>
 
             <form method="post" id="dados-conta" action="signup">
 
                 <div class="row">
-                    <div class="col-12 col-sm-12 col-md-6">
+                    <div class="col-12 col-sm-12 col-md-5">
                         <div class="form-group ">
                             <label for="nome" class="titulos">Nome</label>
                             <input type="text" class="form-control alterar" id="nome" name="nome" value="" 
-                                required>
+                                placeholder="Seu nome" required>
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-12 col-md-4">
+                    <div class="col-12 col-sm-12 col-md-3">
                         <div class="form-group">
                             <label for="email" class="titulos alterar">Email</label>
                              <input type="email" class="form-control alterar" id="email" name="email" value=""
-                                required>
+                                placeholder="email@traveller.com.br" required>
                         </div>
                     </div>
                     
@@ -87,98 +84,98 @@
                         <div class="form-group">
                             <label for="cpf" class="titulos">CPF</label>
                             <div class="input-group mb-2">
-                                <input type="text" class="form-control alterar" id="cpf" name="cpf" value="" >
+                                <input type="text" class="form-control alterar" id="cpf" name="cpf" value="" placeholder="Seu CPF">
                             </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-sm-12 col-md-2">
+                        <div class="form-group">
+                            <label for="telefone" class="titulos">Celular</label>
+                            <input class="form-control alterar" id="telefone" name="telefone"
+                                value="" placeholder="(XX) 98765-4321" required>
                         </div>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-12 col-sm-12 col-md-2">
-                        <div class="form-group">
-                            <label for="telefone" class="titulos">Celular</label>
-                            <input class="form-control alterar" id="telefone" name="telefone"
-                                value="" required>
-                        </div>
-                    </div>
                     <div class="col-12 col-sm-12 col-md-2">
                         <div class="form-group">
                             <label for="data_nascimento" class="titulos">Data de Nascimento</label>
                             <input type="date" class="form-control alterar" id="data_nascimento" name="data_nascimento"
                                 value="" required>
                         </div>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-8">
-                        <div class="form-group">
-                            <label for="foto" class="titulos">Foto</label>
-                            <input type="text" class="form-control alterar" id="foto" name="foto" required>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">                
-                    <div class="col-12 col-sm-12 col-md-6">
-                        <div class="form-group disabled">
-                            <label for="senha" class="titulos">Senha</label>
-                            <div class="input-group mb-2">
-                                <input type="password" class="form-control alterar" id="senha" name="senha"
-                                    placeholder="Sua nova senha">
-                            </div>
-                        </div>
-                    </div>           
-                    <div class="col-12 col-sm-12 col-md-6">
-                        <div class="form-group disabled">
-                            <label for="confirmarSenha" class="titulos">Confirmar Senha</label>
-                            <div class="input-group mb-2">
-                                <input type="password" class="form-control alterar" id="confirmarSenha" name="confirmarSenha"
-                                    placeholder="Confirmar sua nova senha">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
+                    </div>          
                     <div class="col-12 col-sm-12 col-md-2">
                         <div class="form-group">
                             <label for="cep" class="titulos">CEP</label>
                             <input class="form-control alterar" id="cep" name="cep"
-                                value="" required>
+                                value="" placeholder="12345-123" required>
                         </div>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-1">
+                    </div><div class="col-12 col-sm-12 col-md-1">
                         <div class="form-group">
                             <label for="estado" class="titulos">Estado</label>
                             <input class="form-control alterar" id="estado" name="estado"
-                                value="" required>
+                                value="" placeholder="UF" required>
                         </div>
                     </div>
-					<div class="col-12 col-sm-12 col-md-3">
+					<div class="col-12 col-sm-12 col-md-4">
                         <div class="form-group">
                             <label for="cidade" class="titulos">Cidade</label>
                             <input class="form-control alterar" id="cidade" name="cidade"
-                                value="" required>
+                                value="" placeholder="Sua cidade" required>
                         </div>
                     </div>
+                    <div class="col-12 col-sm-12 col-md-3">
+                        <div class="form-group">
+                            <label for="bairro" class="titulos">Bairro</label>
+                            <input class="form-control alterar" id="bairro" name="bairro"
+                                value="" placeholder="Seu bairro" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    
 					<div class="col-12 col-sm-12 col-md-3">
                         <div class="form-group">
                             <label for="logradouro" class="titulos">Logradouro</label>
                             <input class="form-control alterar" id="logradouro" name="logradouro"
-                                value="" required>
+                                value="" placeholder="Seu logradouro" required>
                         </div>
                     </div>
 					<div class="col-12 col-sm-12 col-md-1">
                         <div class="form-group">
                             <label for="numero" class="titulos">Numero</label>
                             <input class="form-control alterar" id="numero" name="numero"
-                                value="" required>
+                                value="" placeholder="123" required>
                         </div>
                     </div>
 					<div class="col-12 col-sm-12 col-md-2">
                         <div class="form-group">
                             <label for="complemento" class="titulos">Complemento</label>
                             <input class="form-control alterar" id="complemento" name="complemento"
-                                value="" required>
+                                value="" placeholder="apto">
                         </div>
                     </div>
+                    <div class="col-12 col-sm-12 col-md-3	">
+						<div class="form-group disabled">
+							<label for="senha" class="titulos">Senha</label>
+							<div class="input-group mb-2">
+								<input type="password" class="form-control alterar" id="senha" name="senha"
+									placeholder="Sua nova senha">
+							</div>
+						</div>
+					</div>              
+					<div class="col-12 col-sm-12 col-md-3">
+						<div class="form-group disabled">
+							<label for="confirmar_senha" class="titulos">Confirmar Senha</label>
+							<div class="input-group mb-2">
+								<input type="password" class="form-control alterar" id="confirma_senha" name="confirma_senha"
+									placeholder="Confirmar sua nova senha">
+							</div>
+						</div>
+					</div>    
                 </div>
 
                 <div class="d-flex justify-content-end">

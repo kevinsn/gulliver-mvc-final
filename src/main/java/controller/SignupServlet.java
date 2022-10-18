@@ -35,12 +35,20 @@ public class SignupServlet extends HttpServlet {
 			user.setCpf(request.getParameter("cpf"));
 			user.setPhone(request.getParameter("telefone"));
 			user.setBirthDate(LocalDate.parse(request.getParameter("data_nascimento")));
-			user.setPhoto(request.getParameter("foto"));
+//			user.setPhoto(request.getParameter("foto"));
 			user.setPassword(request.getParameter("senha"));
 			user.setCreationDate(LocalDate.parse("2003-05-03"));
 			user.setLastAccess(LocalDate.parse("2003-05-03"));
 			
 			Address address = new Address();
+			
+			address.setPostalCode(request.getParameter("cpf"));
+			address.setState(request.getParameter("estado"));
+			address.setCity(request.getParameter("cidade"));
+			address.setNeighborhood(request.getParameter("bairro"));
+			address.setPublicArea(request.getParameter("logradouro"));
+			address.setNumber(Integer.valueOf(request.getParameter("numero")));
+			address.setAdditionalInfo(request.getParameter("complemento"));
 
 			DataSource dataSource = new DataSource();
 			
