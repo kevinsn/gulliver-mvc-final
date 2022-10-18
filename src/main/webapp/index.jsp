@@ -705,7 +705,7 @@
                 </div>
             </div>    
         </section>
-        
+ 
   <footer>
     <div class="container">
       <div class="row">
@@ -719,7 +719,7 @@
           <h2 class="contact"><i class="fa-solid fa-envelope  p-2"></i>Gullivertraveller@gmail.com</h2>
         </div>
         <div class="col-md-6 col-sm-12 col-12">
-          <img src="./assets/img/call-center (1).gif" class="assistant-virtual col-12 img-fluid" alt="assistente virtual">
+          <img src="imgs/call-center (1).gif" class="assistant-virtual col-12 img-fluid" alt="assistente virtual">
         </div>
       </div>
       <div class="row">
@@ -746,6 +746,7 @@
     </div>
     </div>
   </footer>
+
 
 
   <script src="index.js"></script>
