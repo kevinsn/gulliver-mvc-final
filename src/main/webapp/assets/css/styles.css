@@ -887,7 +887,7 @@ iframe{
 }
 
 .card-sp{
-    width: 550px;
+    width: 560px;
     background-color: #062B5C;
     height: 300px;
     color: #e7f3ff;
@@ -927,7 +927,6 @@ iframe{
 
         .gastronomia, sec-2{
             display: inline-block;
-            overflow-x: auto;
 
         }
 
