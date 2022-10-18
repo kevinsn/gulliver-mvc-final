@@ -656,7 +656,7 @@
           <h2 class="contact"><i class="fa-solid fa-envelope  p-2"></i>Gullivertraveller@gmail.com</h2>
         </div>
         <div class="col-md-6 col-sm-12 col-12">
-          <img src="imgs/call-center (1).gif" class="assistant-virtual col-12 img-fluid" alt="assistente virtual">
+          <img src="../img/call-center (1).gif" class="assistant-virtual col-12 img-fluid" alt="assistente virtual">
         </div>
       </div>
       <div class="row">
