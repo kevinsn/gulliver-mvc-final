@@ -32,7 +32,6 @@
     crossorigin=""></script>
     <link rel="stylesheet" href="./assets/css/styles.css">
      <script type = "text/javascript" src="./assets/js/api.js"></script>
-	     <script type = "text/javascript" src="./assets/js/index.js"></script>
 
 
     <title>Gulliver Traveller</title>
@@ -686,7 +685,7 @@
 
 
 
-  <script src="index.js"></script>
+  <script src="./assets/js/index.js"></script>
   <!-- Script para incrementar plugin de libras no site-->
   <div vw class="enabled">
     <div vw-access-button class="active"></div>
