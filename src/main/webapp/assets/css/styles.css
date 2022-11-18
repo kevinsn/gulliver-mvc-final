@@ -347,7 +347,6 @@ header .nav-item:last-child {
     align-items: center;
 }
 .final-rodape{
-    position: fixed;
     height: 2rem;
     width: 100%;
     bottom: 0;
