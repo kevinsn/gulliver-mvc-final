@@ -572,7 +572,7 @@
                   uma noite em São Paulo, beco 203 é um exemplo de sugestão dos paulistas para curtir melhor a noite na
                   cidade.</p>
               </div>
-              <img class="img-top w-100" src="./assets/img/image 36.svg"  data-aos="fade-down">
+              <img class="img-top w-100" src="./assets/img/image 36.svg">
 
 
             </div>
