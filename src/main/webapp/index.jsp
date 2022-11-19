@@ -11,7 +11,9 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	 
   	<!--Script para icon-->
   	<script src="https://use.fontawesome.com/62e43a72a9.js"></script>   
-    <!-- Bootstrap CSS -->
+	<!--aos-->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
    
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -42,7 +44,7 @@
 <body>
 
   <header>
-    <div class="container-fluid p-0">
+    <div class="container-fluid p-0" >
 		<span class="position-absolute trigger">
 		    <!-- hidden trigger to apply 'stuck' styles -->
 		</span>
@@ -118,7 +120,7 @@
         </div>
         <div class="row">
           <div class="col-md-12">
-            <div class="input-group mb-3 barra-busca">
+            <div class="input-group mb-3 barra-busca"  data-aos="fade-left>
               <input type="search" class="form-control" placeholder="Pesquise algo..." aria-label="Pesquise algo..."
                 aria-describedby="button-addon2">
               <button class="btn btn-outline-secondary botao-busca" type="button" id="find-me"
@@ -147,7 +149,7 @@
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
               <button class="box_1 accordion-button" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseOne" aria-controls="collapseOne">
+                data-bs-target="#collapseOne" aria-controls="collapseOne"  data-aos="fade-down">
                 História do Gulliver Traveller
               </button>
             </h2>
@@ -227,7 +229,7 @@
             <div class="card">
               <img
                 src="https://thumbcdn-1.hotelurbano.net/xpUqJXTKYudv41TJF1CuL4O6cgo=/trim:bottom-right:80/fit-in/625x0/bottom/filters:quality(30)/https%3A//novo-hu.s3.amazonaws.com/reservas/ota/prod/hotel/524865/001-fachada-ibis-styles-sao-paulo-anhembi-hotel-001_20191216171043.jpg"
-                class="card-img-top" alt="...">
+                class="card-img-top" alt="hotel SP">
             </div>
             <div class="card-body">
               <h5 class="card-title">IBIS Styles São Paulo Anhembi</h5>
@@ -395,7 +397,7 @@
           <div class="carro-img" style="width: 18rem;">
             <img
               src="https://s2.glbimg.com/mYgwlPa7vtIiUk6kROUxJUi2yyo=/0x0:620x413/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_cf9d035bf26b4646b105bd958f32089d/internal_photos/bs/2020/a/4/Ik8J1fQYirf6wYRvRJ8Q/2020-03-20-novo-tracker-1.jpg"
-              class="card-carro card-img-top" alt="Imagem de um carro">
+              class="card-carro card-img-top" alt="Imagem de um carro" >
             <div class="card-body">
               <h5 class="card-title">Chevrolet Tracker</h5>
               <p class="card-text"> O Chevrolet Tracker é um SUV crossover subcompacto fabricado oela General Motors
@@ -544,7 +546,7 @@
                   uma noite em São Paulo, beco 203 é um exemplo de sugestão dos paulistas para curtir melhor a noite na
                   cidade.</p>
               </div>
-              <img class="img-top w-100" src="./assets/img/image 36.svg">
+              <img class="img-top w-100" src="./assets/img/image 36.svg"  data-aos="fade-down">
 
 
             </div>
@@ -705,6 +707,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
+		
+       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
   <!--elemento de acessibilidade-->
