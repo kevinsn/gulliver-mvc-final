@@ -3,6 +3,65 @@
 
 
 
+/* style for when sitcky is applied */
+.stuck .navbar.sticky-top {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+    position: fixed;
+    width: 100%
+}
+
+.nav-color{
+    background-color: var(--orange-p);
+}
+
+.navbar-itens-color a{
+    color: var(--white-p) !important;
+}
+
+.nav-link:hover{
+    cursor: pointer;
+    background-color: rgb(190, 190, 190);
+    border-radius: 5%;  
+}
+/* Banner */
+
+header{
+    background-color: var(--blue-p);
+}
+
+.conteudo{
+    background-color: var(--blue-p);
+}
+
+
+header .navbar-brand {
+    padding-left: 2rem;
+}
+
+header .nav-item {
+    padding: 0.9rem;
+}
+
+header .nav-item:last-child {
+    padding-right: 10.5rem;
+}
+
+.dropdown-menu {
+    background-color: var(--orange-p) !important;
+}
+
+.dropdown-menu a:hover {
+    background-color: var(--blue-p) !important;
+    color: var(--white-p) !important;
+}
+
+.cabecalho-banner {
+    padding-top: 5rem;
+}
+
+
+
 .card{
     padding: 5px;
     display: inline-block;
