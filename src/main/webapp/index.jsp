@@ -91,15 +91,15 @@
 
     <div class="container cabecalho-banner">
       <div class="row">
-        <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12" data-aos="fade-right">
+        <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
 
           <div class="mold-oval">
           </div>
 
         </div>
-        <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12" data-aos="fade-right">
+        <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
 
-          <div class="mold-oval-sec" data-aos="fade-right">
+          <div class="mold-oval-sec">
           </div>
 
         </div>
@@ -246,7 +246,7 @@
             </div>
           </div>
           <div class="col">
-            <div class="card"  data-aos="fade-down">
+            <div class="card">
               <img
                 src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/91/4e/ca/living-lounge-bar-sushi.jpg?w=900&h=-1&s=1"
                 class="card-img-top" alt="...">
@@ -322,7 +322,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-6 col-xxl-4 mb-5"  data-aos="fade-down">
+                <div class="col-lg-6 col-xxl-4 mb-5">
                   <div class="card bg-light border-0 h-100">
                     <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
                       <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i
@@ -340,7 +340,7 @@
                   </div>
                 </div>
 
-                <div class="col-lg-6 col-xxl-4 mb-5"  data-aos="fade-down">
+                <div class="col-lg-6 col-xxl-4 mb-5">
                   <div class="card bg-light border-0 h-100">
                     <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
                       <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i
@@ -359,7 +359,7 @@
                   </div>
                 </div>
 
-                <div class="col-lg-6 col-xxl-4 mb-5"  data-aos="fade-down">
+                <div class="col-lg-6 col-xxl-4 mb-5">
                   <div class="card bg-light border-0 h-100">
                     <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
                       <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i
@@ -397,7 +397,7 @@
           <div class="carro-img" style="width: 18rem;">
             <img
               src="https://s2.glbimg.com/mYgwlPa7vtIiUk6kROUxJUi2yyo=/0x0:620x413/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_cf9d035bf26b4646b105bd958f32089d/internal_photos/bs/2020/a/4/Ik8J1fQYirf6wYRvRJ8Q/2020-03-20-novo-tracker-1.jpg"
-              class="card-carro card-img-top" alt="Imagem de um carro"  data-aos="fade-down">
+              class="card-carro card-img-top" alt="Imagem de um carro" >
             <div class="card-body">
               <h5 class="card-title">Chevrolet Tracker</h5>
               <p class="card-text"> O Chevrolet Tracker é um SUV crossover subcompacto fabricado oela General Motors
@@ -411,7 +411,7 @@
 
           <div class="carro-img" style="width: 18rem;">
             <img src="https://garagem360.com.br/wp-content/uploads/2021/08/ALTA20-1.jpeg"
-              class="card-carro card-img-top" alt="Imagem de um carro"  data-aos="fade-down">
+              class="card-carro card-img-top" alt="Imagem de um carro">
             <div class="card-body">
               <h5 class="card-title">Peugeot 3008 GT line</h5>
               <p class="card-text"> Para sua viagem ser ainda mais inesquecível, conheça o novo PEUGEOT 3008 e o seu
@@ -424,7 +424,7 @@
 
           <div class="carro-img" style="width: 18rem;">
             <img src="https://cdn5.jornaldenegocios.pt/images/2022-01/img_440x275$2022_01_19_17_00_32_420384.jpg"
-              class="card-carro card-img-top" alt="Imagem de um carro"  data-aos="fade-down">
+              class="card-carro card-img-top" alt="Imagem de um carro">
 
             <div class="card-body">
               <h5 class="card-title">Peugeot 2008</h5>
@@ -660,7 +660,7 @@
           <h2 class="contact"><i class="fa-solid fa-envelope  p-2"></i>Gullivertraveller@gmail.com</h2>
         </div>
         <div class="col-md-6 col-sm-12 col-12">
-          <img src="./assets/img/virtual-assistant.gif" class="assistant-virtual col-12 img-fluid" alt="assistente virtual"  data-aos="fade-down">
+          <img src="./assets/img/virtual-assistant.gif" class="assistant-virtual col-12 img-fluid" alt="assistente virtual">
         </div>
       </div>
       <div class="row">
