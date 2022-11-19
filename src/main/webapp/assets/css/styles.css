@@ -143,7 +143,14 @@ header .nav-item:last-child {
 
 }
 
-
+.botao-servicos {
+    width: 150px;
+    height: 30px;
+    background-color: var(--orange-p) !important;
+    color: var(--white-p) !important;
+    border-radius: 35px !important;
+    font-size: 12px;
+}
 
 .botao-login {
     width: 220px;

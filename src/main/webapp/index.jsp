@@ -177,13 +177,32 @@
     <!--HOSPEDAGEM-->
     <section class="sec-1 serviços">
       <div class="container text-center">
+        <h1 class="d-flex justify-content-center" style="color: #073673; font-weight:bolder; font-size: 32px;">
+            Serviços que oferecemos para vocês: </h1>
         <div class="row">
 
-          <h1 class="d-flex justify-content-center" style="color: #073673; font-weight:bolder; font-size: 32px;">
-            Serviços que oferecemos para vocês: </h1>
-
-          <img class="img-fluid" src="./assets/img/servicos.png" alt="serviços que oferecemos">
+		<div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
+        	<img class="img-fluid" src="./assets/img/hospedagem.png" alt="hospedagem">
+        	<br>
+        	<button type="button" class="btn btn-outline-secondary botao-servicos"
+              style="font-weight: bold">Hospedagem</button>
         </div>
+
+		<div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
+        	<img class="img-fluid" src="./assets/img/aluguel_carros.png" alt="aluguel">
+        	<br>
+        	<button type="button" class="btn btn-outline-secondary botao-servicos"
+              style="font-weight: bold">Aluguel de Carros</button>
+        </div>
+        
+		<div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
+        	<img class="img-fluid" src="./assets/img/refeicoes.png" alt="aluguel">
+        	<br>
+        	<button type="button" class="btn btn-outline-secondary botao-servicos"
+              style="font-weight: bold">Refeições</button>
+        </div>
+        <!--<img class="img-fluid" src="./assets/img/servicos.png" alt="serviços que oferecemos">
+        </div> -->
     </section>
 
     <section class="sec-2 hospedagens">
