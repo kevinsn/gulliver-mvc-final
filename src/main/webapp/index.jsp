@@ -120,7 +120,7 @@
         </div>
         <div class="row">
           <div class="col-md-12">
-            <div class="input-group mb-3 barra-busca"  data-aos="fade-left>
+            <div class="input-group mb-3 barra-busca"  data-aos="fade-left">
               <input type="search" class="form-control" placeholder="Pesquise algo..." aria-label="Pesquise algo..."
                 aria-describedby="button-addon2">
               <button class="btn btn-outline-secondary botao-busca" type="button" id="find-me"
@@ -129,7 +129,8 @@
             </div>
           </div>
         </div>
-
+      </div>
+    </div>
   </header>
 
   <!--waves-->
