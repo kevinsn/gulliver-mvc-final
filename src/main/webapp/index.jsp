@@ -181,7 +181,7 @@
           <h1 class="d-flex justify-content-center" style="color: #073673; font-weight:bolder; font-size: 32px;">
             Serviços que oferecemos para vocês: </h1>
 
-          <img class="img-fluid" src="./assets/img/servicos.png" alt="serviços que oferecemos"  data-aos="fade-down">
+          <img class="img-fluid" src="./assets/img/servicos.png" alt="serviços que oferecemos">
         </div>
     </section>
 
@@ -229,7 +229,7 @@
             <div class="card">
               <img
                 src="https://thumbcdn-1.hotelurbano.net/xpUqJXTKYudv41TJF1CuL4O6cgo=/trim:bottom-right:80/fit-in/625x0/bottom/filters:quality(30)/https%3A//novo-hu.s3.amazonaws.com/reservas/ota/prod/hotel/524865/001-fachada-ibis-styles-sao-paulo-anhembi-hotel-001_20191216171043.jpg"
-                class="card-img-top" alt="...">
+                class="card-img-top" alt="hotel SP">
             </div>
             <div class="card-body">
               <h5 class="card-title">IBIS Styles São Paulo Anhembi</h5>
@@ -266,7 +266,7 @@
             </div>
           </div>
           <div class="col">
-            <div class="card"  data-aos="fade-down">
+            <div class="card">
               <img
                 src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/29449472.jpg?k=359abeeab31bc674e8c23020c3ac56fbd62297b3608d03e2fa6648e9751110a2&o=&hp=1"
                 class="card-img-top" alt="...">
