@@ -24,7 +24,10 @@
 
   <header>
     <div class="container-fluid p-0">
-      <nav class="navbar navbar-expand-lg navbar-light">
+    	<span class="position-absolute trigger">
+		    <!-- hidden trigger to apply 'stuck' styles -->
+		</span>
+        <nav class="navbar navbar-expand-lg navbar-light nav-color sticky-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src="imgs/logo1 (2).svg" alt=""></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
