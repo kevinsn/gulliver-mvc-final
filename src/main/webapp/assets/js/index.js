@@ -43,4 +43,18 @@ function geoFindMe() {
     };
 })).observe(document.querySelector('.trigger'));
 
+function myFunction() {
+  var element = document.body;
+  element.classList.toggle("dark-mode"); 
+  var element2 = document.getElementById("collapseOne");
+  element2.classList.toggle("dark-mode");  
+  var element3 = document.getElementById("sec-1");
+  element3.classList.toggle("dark-mode");  
+  var element4 = document.getElementById("servicos1");
+  element4.classList.toggle("dark-mode");    
+  var element5 = document.getElementById("feature");
+  element5.classList.toggle("dark-mode");  
+  
+}
+
 document.querySelector('#find').addEventListener('click', geoFindMe);

@@ -103,7 +103,7 @@
           </div>
 
         </div>
-        <div class="col-lg-4  col-sm-12 col-xs-12 texto-1">
+        <div class="col-lg-4 col-sm-12 col-xs-12 texto-1">
           <h1>Bem-Vindo(a)! ✈️</h1>
 
           <p class="text-left"> Gulliver Traveller conta todas as suas aventuras e desbravamentos pelos confins do
@@ -150,7 +150,7 @@
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
               <button class="box_1 accordion-button" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseOne" aria-controls="collapseOne"  data-aos="fade-down">
+                data-bs-target="#collapseOne" aria-controls="collapseOne">
                 História do Gulliver Traveller
               </button>
             </h2>
@@ -171,12 +171,18 @@
       </div>
     </div>
 
-	  
-	  
-
+	<!--
+  	  <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
+      	<img class="img-fluid" src="./assets/img/hospedagem.png" alt="hospedagem">
+      	<br>
+      	<button onclick="myFunction();" type="button" class="btn btn-outline-secondary botao-servicos"
+            style="font-weight: bold">Dark mode</button>
+      </div>
+	-->
+	
     <!--HOSPEDAGEM-->
-    <section class="sec-1 serviços">
-      <div class="container text-center">
+    <section id="sec-1" class="serviços">
+      <div id="servicos1" class="container text-center">
         <h1 class="d-flex justify-content-center" style="color: #073673; font-weight:bolder; font-size: 32px;">
             Serviços que oferecemos para vocês: </h1>
         <div class="row">
@@ -201,8 +207,9 @@
         	<button type="button" class="btn btn-outline-secondary botao-servicos"
               style="font-weight: bold">Refeições</button>
         </div>
-        <!--<img class="img-fluid" src="./assets/img/servicos.png" alt="serviços que oferecemos">
-        </div> -->
+        <!--<img class="img-fluid" src="./assets/img/servicos.png" alt="serviços que oferecemos">-->
+        </div>
+      </div>
     </section>
 
     <section class="sec-2 hospedagens">
@@ -307,7 +314,6 @@
         </div>
       </div>
     </section>
-    </div>
 
 
 
@@ -457,6 +463,7 @@
             </div>
           </div>
         </div>
+      </div>
     </section>
 
 
@@ -494,7 +501,6 @@
       </section>
 
 
-    </section>
     </section>
 
 
@@ -576,7 +582,6 @@
 
 
     </section>
-    </section>
 
 
 
@@ -616,7 +621,7 @@
                 </div>
               </div>
             </div>
-
+	      </div>
         </section>
 
       </section>
@@ -698,13 +703,11 @@
         </div>
       </div>
     </div>
-    </div>
     <div class="container-fluid p-0 m-0">
       <div class="final-rodape">
 
       </div>
 
-    </div>
     </div>
   </footer>
 

@@ -4,6 +4,7 @@
     --blue-p: #062B5C;
     --orange-p: #F28907;
     --white-p: #FFFFFF;
+    --black-p: #121212;
 }
 *{
     font-family: 'Poppins', sans-serif;
@@ -14,6 +15,11 @@ body{
     overflow-x: hidden!important;
     padding: 0;
     margin: 0;
+}
+
+.dark-mode {
+  background-color: var(--black-p);
+  color: var(--white-p);
 }
 /* Navbar */
 
@@ -382,12 +388,12 @@ header .nav-item:last-child {
     transform: rotate(180deg);
 }
 
-.sec-1 {
+#sec-1 {
     background-color: var(--white-p);
     padding-top: 5rem;
 }
 
-.sec-1 h1 {
+#sec-1 h1 {
     padding-bottom: 2rem;
     font-size: 2rem;
     font-weight: 900;
