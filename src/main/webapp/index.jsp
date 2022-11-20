@@ -78,7 +78,7 @@
 			                  <li><a class="dropdown-item" href="cultura_historia_entretenimento_vida.jsp">Cultura</a></li>
 			                  <li><a class="dropdown-item" href="cultura_historia_entretenimento_vida.jsp">História</a></li>
 			                  <li><a class="dropdown-item" href="cultura_historia_entretenimento_vida.jsp">Entretenimento</a></li>
-			                  <li><a class="dropdown-item" href="cultura_historia_entretenimento_vida.jsp">Vida Noturna</a></li>
+			                  <li><a class="dropdown-item" href="#vidanortuna">Vida Noturna</a></li>
                                           <li><a class="dropdown-item" href="parques.html">Parques</a></li>
 
 			                </ul>
