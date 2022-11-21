@@ -518,39 +518,39 @@
     <div class="museus container col-12 col-lg-8" id="entretenimento">
       <div class="row">
         <h1 class="titulo-galeria"> Os melhores lugares de <em>São paulo</em> para conhecer!</h1>
-        <div class="card-place" style="width: 21rem;">
+        <div class="card-place" style="width: 20rem;">
           <img src="https://artebrasileiros.com.br/wp-content/uploads/2022/05/Masp.jpg" target="_blank"
             class="card-img-top p-2" alt="Masp São Paulo">
 
         </div>
 
 
-        <div class="card-place" style="width: 21rem;">
+        <div class="card-place" style="width: 20rem;">
           <img src="https://blog.loft.com.br/wp-content/uploads/2021/07/bairro-liberdade-galvao-bueno.jpg"
             target="_blank" class="card-img-top p-2" alt="Bairro Liberdade - SP">
 
         </div>
 
 
-        <div class="card-place" style="width: 21rem;">
+        <div class="card-place" style="width: 20rem;">
           <img
             src="https://cidadedesaopaulo.com/wp-content/uploads/2016/10/Teatro-Municipal_101113_Foto_JoseCordeiro_17.jpg"
             target="_blank" class="card-img-top p-2" alt="Teatro Municipal - SP">
 
         </div>
 
-        <div class="card-place" style="width: 21rem;">
+        <div class="card-place" style="width: 20rem;">
           <img src="https://blog.maxmilhas.com.br/wp-content/uploads/2021/12/Cidade-de-Sa%CC%83o-Paulo.jpeg"
             target="_blank" class="card-img-top p-2" alt="Cidade de São Paulo">
         </div>
 
 
-        <div class="card-place" style="width: 21rem;">
+        <div class="card-place" style="width: 20rem;">
           <img src="https://www.elasviajando.com.br/wp-content/uploads/2020/10/theatro-municipal-sp.jpg" target="_blank"
             class="card-img-top p-2" alt="Teatro Municipal">
         </div>
 
-        <div class="card-place" style="width: 21rem;">
+        <div class="card-place" style="width: 20rem;">
           <img
             src="https://a.cdn-hotels.com/gdcs/production92/d679/152529e0-f586-11e8-b8fa-0242ac11000d.jpg?impolicy=fcrop&w=800&h=533&q=medium"
             target="_blank" class="card-img-top p-2" alt="Museu Ipiranga - SP">
