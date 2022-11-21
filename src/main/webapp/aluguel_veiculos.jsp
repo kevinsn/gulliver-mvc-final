@@ -351,7 +351,7 @@
     </footer>
 
     
-    <script src="./src/js/index.js"></script>
+    <script src="./assets/js/index.js"></script>
   <!-- Script para incrementar plugin de libras no site-->
     <div vw class="enabled">
     <div vw-access-button class="active mx-3"></div>

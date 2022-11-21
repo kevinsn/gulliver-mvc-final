@@ -385,6 +385,7 @@
                   </div>
                 </div>
 
+				<!-- 
                 <div class="col-lg-6 col-xxl-4 mb-5">
                   <div class="card bg-light border-0 h-100">
                     <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
@@ -401,10 +402,11 @@
                       </a>
 
 
-                    </div>
-                  </div>
-                </div>
-              </div>
+                    	</div>
+                  	</div>
+                	</div>
+              	</div>
+              	-->
             </div>
           </div>
         </section>
@@ -415,27 +417,29 @@
 
     <!--CARRO-->
     <section class="serviços" id="alugarcarro">
-      <div class="container col-12 col-lg-8">
-        <div class="row">
-
+      <div class="container">
           <h1 class="titulo_carro d-flex justify-content-center">
             ALUGUÉIS DE CARROS </h1>
-          <div class="carro-img" style="width: 18rem;">
-            <img
-              src="https://s2.glbimg.com/mYgwlPa7vtIiUk6kROUxJUi2yyo=/0x0:620x413/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_cf9d035bf26b4646b105bd958f32089d/internal_photos/bs/2020/a/4/Ik8J1fQYirf6wYRvRJ8Q/2020-03-20-novo-tracker-1.jpg"
-              class="card-carro card-img-top" alt="Imagem de um carro" >
-            <div class="card-body">
-              <h5 class="card-title">Chevrolet Tracker</h5>
-              <p class="card-text"> O Chevrolet Tracker é um SUV crossover subcompacto fabricado oela General Motors
-                desde 2019.
-              </p>
-              <a href="https://www.localiza.com/brasil/pt-br?gclid=Cj0KCQjwpeaYBhDXARIsAEzItbF_uSRuIz65-aTsGH3VJv_YGIb_-JhT6gHrH9Vscisyb8-naEjtxWwaAi29EALw_wcB"
-                class=" box btn bg-dark mr-2  text-light"> Acessar </a>
+        	<div class="row">
+	 			<div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
+		          <div class="carro-img">
+		            <img
+		              src="https://s2.glbimg.com/mYgwlPa7vtIiUk6kROUxJUi2yyo=/0x0:620x413/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_cf9d035bf26b4646b105bd958f32089d/internal_photos/bs/2020/a/4/Ik8J1fQYirf6wYRvRJ8Q/2020-03-20-novo-tracker-1.jpg"
+		              class="card-carro card-img-top" alt="Imagem de um carro" >
+		            <div class="card-body">
+		              <h5 class="card-title">Chevrolet Tracker</h5>
+		              <p class="card-text"> O Chevrolet Tracker é um SUV crossover subcompacto fabricado oela General Motors
+		                desde 2019.
+		              </p>
+		              <a href="https://www.localiza.com/brasil/pt-br?gclid=Cj0KCQjwpeaYBhDXARIsAEzItbF_uSRuIz65-aTsGH3VJv_YGIb_-JhT6gHrH9Vscisyb8-naEjtxWwaAi29EALw_wcB"
+		                class=" box btn bg-dark mr-2  text-light"> Acessar </a>
+		
+		            </div>
+	          	</div>
+	          </div>
 
-            </div>
-          </div>
-
-          <div class="carro-img" style="width: 18rem;">
+	 			<div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
+          <div class="carro-img">
             <img src="https://garagem360.com.br/wp-content/uploads/2021/08/ALTA20-1.jpeg"
               class="card-carro card-img-top" alt="Imagem de um carro">
             <div class="card-body">
@@ -447,8 +451,10 @@
                 class=" box btn bg-dark mr-2  text-light"> Acessar </a>
             </div>
           </div>
+          </div>
 
-          <div class="carro-img" style="width: 18rem;">
+	 			<div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
+          <div class="carro-img">
             <img src="https://cdn5.jornaldenegocios.pt/images/2022-01/img_440x275$2022_01_19_17_00_32_420384.jpg"
               class="card-carro card-img-top" alt="Imagem de um carro">
 
@@ -461,6 +467,7 @@
                 class=" box btn bg-dark mr-2 text-light"> Acessar</a>
 
             </div>
+          </div>
           </div>
         </div>
       </div>
@@ -490,11 +497,13 @@
                 singular, seja na
                 música, na literatura ou nas artes plásticas.</p>
               <h2 class="titulo-video"> Conheça alguns museus para conhecer mais sobre a cultura brasileira:</h2>
+              <br>
+              <div align="center">
               <iframe src="https://www.youtube.com/embed/ZfC-BUjxLR4" title="YouTube video player"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-              </iframe>
+                allowfullscreen height="200px">
+              </iframe></div>
             </div>
           </div>
         </div>
@@ -508,40 +517,40 @@
     <!--ENTRETENIMENTO-->
     <div class="museus container col-12 col-lg-8" id="entretenimento">
       <div class="row">
-        <h1 class="titulo-galeria"> Os melhores luagres de <em>São paulo</em> para conhecer!</h1>
-        <div class="card-place" style="width: 18rem;">
+        <h1 class="titulo-galeria"> Os melhores lugares de <em>São paulo</em> para conhecer!</h1>
+        <div class="card-place" style="width: 21rem;">
           <img src="https://artebrasileiros.com.br/wp-content/uploads/2022/05/Masp.jpg" target="_blank"
             class="card-img-top p-2" alt="Masp São Paulo">
 
         </div>
 
 
-        <div class="card-place" style="width: 18rem;">
+        <div class="card-place" style="width: 21rem;">
           <img src="https://blog.loft.com.br/wp-content/uploads/2021/07/bairro-liberdade-galvao-bueno.jpg"
             target="_blank" class="card-img-top p-2" alt="Bairro Liberdade - SP">
 
         </div>
 
 
-        <div class="card-place" style="width: 18rem;">
+        <div class="card-place" style="width: 21rem;">
           <img
             src="https://cidadedesaopaulo.com/wp-content/uploads/2016/10/Teatro-Municipal_101113_Foto_JoseCordeiro_17.jpg"
             target="_blank" class="card-img-top p-2" alt="Teatro Municipal - SP">
 
         </div>
 
-        <div class="card-place" style="width: 18rem;">
+        <div class="card-place" style="width: 21rem;">
           <img src="https://blog.maxmilhas.com.br/wp-content/uploads/2021/12/Cidade-de-Sa%CC%83o-Paulo.jpeg"
             target="_blank" class="card-img-top p-2" alt="Cidade de São Paulo">
         </div>
 
 
-        <div class="card-place" style="width: 18rem;">
+        <div class="card-place" style="width: 21rem;">
           <img src="https://www.elasviajando.com.br/wp-content/uploads/2020/10/theatro-municipal-sp.jpg" target="_blank"
             class="card-img-top p-2" alt="Teatro Municipal">
         </div>
 
-        <div class="card-place" style="width: 18rem;">
+        <div class="card-place" style="width: 21rem;">
           <img
             src="https://a.cdn-hotels.com/gdcs/production92/d679/152529e0-f586-11e8-b8fa-0242ac11000d.jpg?impolicy=fcrop&w=800&h=533&q=medium"
             target="_blank" class="card-img-top p-2" alt="Museu Ipiranga - SP">

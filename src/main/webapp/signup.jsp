@@ -190,7 +190,7 @@
 
         <footer>
 	        <div class="container-fluid p-0 m-0">
-	            <div class="final-rodape">
+	            <div class="final-rodape-cadastro">
 	
 	            </div>                    
 	        </div>

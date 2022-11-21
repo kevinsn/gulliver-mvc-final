@@ -19,6 +19,18 @@ body{
     box-sizing: border-box!important;
 }
 
+.sticky-top {
+    transition: all 0.25s ease-in;
+}
+
+/* style for when sitcky is applied */
+.stuck .navbar.sticky-top {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+    position: fixed;
+    width: 100%
+}
+
 @media only screen and (max-width: 1200px) {
    .mold-oval{
     display:none;

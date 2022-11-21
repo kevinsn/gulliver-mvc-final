@@ -378,6 +378,14 @@ header .nav-item:last-child {
     background-color: var(--blue-p);
 }
 
+.final-rodape-cadastro{
+	position: fixed;
+    height: 2rem;
+    width: 100%;
+    bottom: 0;
+    background-color: var(--blue-p);
+}
+
 
 /* NOVO CSS */
 
@@ -751,7 +759,7 @@ em{
 
 .gastronomia{
     background-color: #062B5C;
-    height: 1000px;
+    height: 700px;
 
 
 }
